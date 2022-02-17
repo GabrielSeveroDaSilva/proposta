@@ -8,7 +8,7 @@ if(isset($_GET['i'])){
 }
 
 /* Carrega o header */
-include 'views/login.html';
+include 'views/index.html';
 
 
 
