@@ -25,11 +25,11 @@ if(isset($_POST['submit']))
         if ($senha == "") {
             $mensagem = "<span class='aviso'><b>Aviso</b>: Senha não foi alterada!</span>";
         } else if ($senha == $senhaConfirma) {
-            $mensagem = "<span class='sucesso'><b>Sucesso</b>: As senhas são iguais: ".$senha."</span>";
+            $mensagem = "<span class='sucesso'><b>Sucesso</b>: As senhas são iguais</span>";
         } else {
             $mensagem = "<span class='erro'><b>Erro</b>: As senhas não conferem!</span>";
         }
-        echo "<p id='mensagem'>".$mensagem."</p>";
+        echo "<div id='mensagem'>".$mensagem."</div>";
     }
 ?>
 

@@ -1,11 +1,14 @@
 body{
-    background: #ad5389;
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
-    background: linear-gradient(to right, #3c1053, #ad5389);
+    background: #00416A; 
+    background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);
+    background: linear-gradient(to right, #E4E5E6, #00416A);
+
+
 
     #mensagem{
-        width: 20%;
         text-align: center;
+        margin: 0 auto;
+        width: 300px;
     }
     span{
         padding: 6px 20px;
@@ -27,11 +30,7 @@ body{
         padding: 4px 6px;
     }
 
-
-
-
-
-    .home{
+    .bvindo{
         position: absolute;
         text-align: center;
         color: #fff;
@@ -48,13 +47,13 @@ body{
             color: #fff;
             border: none;
             text-decoration: none;
-            border: 3px solid #aa2a77;
+            border: 3px solid #00416A;
             border-radius: 10px;
             padding: 10px;
 
             &:hover{
                 cursor: pointer;
-                background-color: #aa2a77;
+                background-color: #00416A;
             }
 
         }
@@ -92,7 +91,7 @@ body{
         }
 
         .inputSubmit{
-            background-color: #aa2a77;
+            background-color: #00416A;
             border: none;
             color: #fff;
             padding: 10px;
@@ -104,7 +103,7 @@ body{
 
             &:hover{
                 cursor: pointer;
-                background-color: #bb7ea2;
+                background-color: #096ead;
             }
         }
 
@@ -133,17 +132,18 @@ body{
             font-size: 1rem;
         }
 
-        a{
+        #submit{
             color: #fff;
             border: none;
+            background-color: #00416A;
             text-decoration: none;
-            border: 3px solid #aa2a77;
+            border: 3px solid #00416A;
             border-radius: 10px;
             padding: 10px;
             margin-top: 15px;
 
             &:hover{
-                background-color: #aa2a77;
+                background-color: #096ead;
                 cursor: pointer;
             }
         }

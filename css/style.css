@@ -1,12 +1,13 @@
 body {
-  background: #ad5389;
-  background: -webkit-gradient(linear, left top, right top, from(#3c1053), to(#ad5389));
-  background: linear-gradient(to right, #3c1053, #ad5389);
+  background: #00416A;
+  background: -webkit-gradient(linear, left top, right top, from(#E4E5E6), to(#00416A));
+  background: linear-gradient(to right, #E4E5E6, #00416A);
 }
 
 body #mensagem {
-  width: 20%;
   text-align: center;
+  margin: 0 auto;
+  width: 300px;
 }
 
 body span {
@@ -33,7 +34,7 @@ body input {
   padding: 4px 6px;
 }
 
-body .home {
+body .bvindo {
   position: absolute;
   text-align: center;
   color: #fff;
@@ -48,18 +49,18 @@ body .home {
   text-transform: capitalize;
 }
 
-body .home a {
+body .bvindo a {
   color: #fff;
   border: none;
   text-decoration: none;
-  border: 3px solid #aa2a77;
+  border: 3px solid #00416A;
   border-radius: 10px;
   padding: 10px;
 }
 
-body .home a:hover {
+body .bvindo a:hover {
   cursor: pointer;
-  background-color: #aa2a77;
+  background-color: #00416A;
 }
 
 body .login {
@@ -93,7 +94,7 @@ body .login input {
 }
 
 body .login .inputSubmit {
-  background-color: #aa2a77;
+  background-color: #00416A;
   border: none;
   color: #fff;
   padding: 10px;
@@ -106,7 +107,7 @@ body .login .inputSubmit {
 
 body .login .inputSubmit:hover {
   cursor: pointer;
-  background-color: #bb7ea2;
+  background-color: #096ead;
 }
 
 body .cadastro {
@@ -135,18 +136,19 @@ body .cadastro input {
   font-size: 1rem;
 }
 
-body .cadastro a {
+body .cadastro #submit {
   color: #fff;
   border: none;
+  background-color: #00416A;
   text-decoration: none;
-  border: 3px solid #aa2a77;
+  border: 3px solid #00416A;
   border-radius: 10px;
   padding: 10px;
   margin-top: 15px;
 }
 
-body .cadastro a:hover {
-  background-color: #aa2a77;
+body .cadastro #submit:hover {
+  background-color: #096ead;
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
