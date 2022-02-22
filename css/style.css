@@ -1,154 +1,51 @@
+/* Google Font Import - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  /* ===== Colors ===== */
+  --body-color: #E4E9F7;
+  --sidebar-color: #FFF;
+  --primary-color: #695CFE;
+  --primary-color-light: #F6F5FF;
+  --toggle-color: #DDD;
+  --text-color: #707070;
+  /* ====== Transition ====== */
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
+}
+
 body {
-  background: #00416A;
-  background: -webkit-gradient(linear, left top, right top, from(#E4E5E6), to(#00416A));
-  background: linear-gradient(to right, #E4E5E6, #00416A);
+  min-height: 100vh;
+  background-color: var(--body-color);
+  -webkit-transition: var(--tran-05);
+  transition: var(--tran-05);
 }
 
-body #mensagem {
-  text-align: center;
-  margin: 0 auto;
-  width: 300px;
-}
-
-body span {
-  padding: 6px 20px;
-  border-radius: 10px;
-}
-
-body .erro {
-  background-color: #ffecec;
-  border: 1px solid #f5aca6;
-}
-
-body .sucesso {
-  background-color: #e9ffd9;
-  border: 1px solid #a6ca8a;
-}
-
-body .aviso {
-  background-color: #fff8c4;
-  border: 1px solid #f2c779;
-}
-
-body input {
-  padding: 4px 6px;
-}
-
-body .bvindo {
-  position: absolute;
-  text-align: center;
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 50px;
-  border-radius: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: capitalize;
-}
-
-body .bvindo a {
-  color: #fff;
-  border: none;
-  text-decoration: none;
-  border: 3px solid #00416A;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-body .bvindo a:hover {
-  cursor: pointer;
-  background-color: #00416A;
-}
-
-body .login {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  padding: 3rem;
-  border-radius: 1rem;
-  text-align: center;
+body ::-moz-selection {
+  background-color: var(--primary-color);
   color: #fff;
 }
 
-body .login h1 {
-  text-transform: uppercase;
-}
-
-body .login .labelInput {
-  position: absolute;
-  pointer-events: none;
-}
-
-body .login input {
-  padding: 1rem;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-}
-
-body .login .inputSubmit {
-  background-color: #00416A;
-  border: none;
+body ::selection {
+  background-color: var(--primary-color);
   color: #fff;
-  padding: 10px;
-  border-radius: 1rem;
-  width: 75%;
-  margin-top: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
-body .login .inputSubmit:hover {
-  cursor: pointer;
-  background-color: #096ead;
-}
-
-body .cadastro {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 15px;
-  border-radius: 10px;
-}
-
-body .cadastro h1 {
-  text-transform: uppercase;
-}
-
-body .cadastro input {
-  padding: 10px;
-  margin-top: 15px;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-}
-
-body .cadastro #submit {
-  color: #fff;
-  border: none;
-  background-color: #00416A;
-  text-decoration: none;
-  border: 3px solid #00416A;
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 15px;
-}
-
-body .cadastro #submit:hover {
-  background-color: #096ead;
-  cursor: pointer;
+body .dark {
+  --body-color: #18191a;
+  --sidebar-color: #242526;
+  --primary-color: #3a3b3c;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --text-color: #ccc;
 }
 /*# sourceMappingURL=style.css.map */
