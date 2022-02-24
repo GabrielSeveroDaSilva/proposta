@@ -112,6 +112,9 @@
 .sidebar .nav-links li.showMenu .sub-menu{
   display: block;
 }
+
+
+/*  */
 .sidebar .nav-links li .sub-menu a{
   color: #fff;
   font-size: 15px;
@@ -237,6 +240,7 @@
 .home-section .home-content .text{
   font-size: 26px;
   font-weight: 600;
+  text-transform: capitalize;
 }
 @media (max-width: 420px) {
   .sidebar.close .nav-links li .sub-menu{
