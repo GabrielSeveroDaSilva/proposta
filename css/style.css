@@ -25,25 +25,25 @@
   opacity: 0;
   pointer-events: none;
 }
-.sidebar.close .logo-details .nav-links {
+.sidebar.close .nav-links {
   overflow: visible;
 }
-.sidebar.close .logo-details .nav-links li .iocn-link {
+.sidebar.close .nav-links li .iocn-link {
   display: block;
 }
-.sidebar.close .logo-details .nav-links li a .link_name {
+.sidebar.close .nav-links li a .link_name {
   opacity: 0;
   pointer-events: none;
 }
 @media (max-width: 420px) {
-  .sidebar.close .logo-details .nav-links li .sub-menu {
+  .sidebar.close .nav-links li .sub-menu {
     display: none;
   }
 }
-.sidebar.close .logo-details .nav-links i .arrow {
+.sidebar.close .nav-links i .arrow {
   display: none;
 }
-.sidebar.close .logo-details .nav-links .sub-menu {
+.sidebar.close .nav-links .sub-menu {
   position: absolute;
   left: 100%;
   top: -10px;
@@ -55,12 +55,12 @@
   pointer-events: none;
   transition: 0s;
 }
-.sidebar.close .logo-details .nav-links .sub-menu .link_name {
+.sidebar.close .nav-links .sub-menu .link_name {
   font-size: 18px;
   opacity: 1;
   display: block;
 }
-.sidebar.close .logo-details .nav-links:hover .sub-menu {
+.sidebar.close .nav-links:hover .sub-menu {
   top: 0;
   opacity: 1;
   pointer-events: auto;
@@ -119,10 +119,10 @@
   align-items: center;
   justify-content: space-between;
 }
-.sidebar .nav-links li .showMenu i .arrow {
+.sidebar .nav-links li.showMenu i .arrow {
   transform: rotate(-180deg);
 }
-.sidebar .nav-links li .showMenu .sub-menu {
+.sidebar .nav-links li.showMenu .sub-menu {
   display: block;
 }
 .sidebar .nav-links li i {
@@ -213,9 +213,12 @@
   font-size: 12px;
 }
 
+body {
+  background: #E4E9F7;
+}
+
 .home-section {
   position: relative;
-  background: #E4E9F7;
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
@@ -238,6 +241,25 @@
 .home-section .home-content .text {
   font-size: 26px;
   font-weight: 600;
+  text-transform: capitalize;
+}
+.home-section .home-content .button {
+  margin-left: auto;
+}
+.home-section .home-content .button a {
+  padding: 10px 40px;
+  right: 15px;
+  background-color: #239b23;
+  border: 2px solid #0c410c;
+  border-radius: 10px;
+  color: #fff;
+  margin-right: 15px;
+}
+.home-section .home-content .button a:hover {
+  background-color: #0c410c;
+}
+.home-section p {
+  margin-left: 15px;
   text-transform: capitalize;
 }
 
