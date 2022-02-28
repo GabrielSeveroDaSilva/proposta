@@ -9,13 +9,7 @@ $data = Db::query($query);
 ?>
 
 
-<section class="home-section">
-    <div class="home-content">
-      <i class='bx bx-menu' ></i>
-      <span class="text">Propostas</span>
-      <br><br>
-    </div>
-    <div class="table">
+<div class="table">
     <table id="table" class="uk-table uk-table-responsive uk-table-divider">
       <thead id="leg">
           <tr>
@@ -27,7 +21,7 @@ $data = Db::query($query);
       <tbody>
         <?php  
         foreach($data as $p ){?>
-
+    
           <tr>
               <td><?= $p["id"]?></td>
               <td><?= $p["cliente_id"]?></td>
@@ -40,4 +34,4 @@ $data = Db::query($query);
           
       </tbody>
     </table>
-  </div>
+</div>

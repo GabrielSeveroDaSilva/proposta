@@ -22,3 +22,24 @@ values (1, 'Administrador', 'adm@gmail.com', 'admin');
 
 -- insert into cliente (ome, email, login)
 -- values (1, 'Freitas', 'freitas@gmail.com', );
+
+
+drop table if exists proposta;
+
+create table proposta (
+    id int not null auto_increment primary key, 
+    cliente_id int not null , 
+    data_emissao date not null,
+    cabecalho text 
+
+);
+
+
+drop table if exists item;
+
+create table item (
+    id int not null auto_increment primary key, 
+    proprietario_id int not null , 
+    produto int not null,
+
+);

@@ -11,6 +11,11 @@
         <a href="?i=nova-proposta">Nova Proposta</a>
       </div>
     </div>
+    <?php 
+    
+    @include './views/include/_table.php' ;
+    
+    ?>
 
 </section>
 

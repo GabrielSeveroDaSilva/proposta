@@ -215,6 +215,59 @@
   font-size: 12px;
 }
 
+.home-section .create {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.home-section .create .edit {
+  padding: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin: auto;
+}
+.home-section .create .edit label {
+  margin: 15px;
+  float: left;
+  padding: 4px;
+}
+.home-section .create .edit input {
+  margin: 15px;
+  padding: 5px 10px;
+  float: right;
+  text-align: left;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  color: #333;
+}
+.home-section .create .edit #text {
+  padding: 10px;
+  text-align: left;
+  float: right;
+}
+.home-section .create .edit .submit {
+  margin: auto;
+  padding: 10px 40px;
+  background-color: #239b23;
+  border: 2px solid #0c410c;
+  border-radius: 10px;
+  color: #fff;
+}
+.home-section .create .edit .submit:hover {
+  background-color: #0c410c;
+}
+
+.home-section .table {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.home-section .table #table {
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 15px;
+  margin: auto;
+}
 body {
   background: #fff;
 }
@@ -261,14 +314,6 @@ body {
 }
 .home-section .home-content .button a:hover {
   background-color: #0c410c;
-}
-.home-section .create {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-}
-.home-section .create form {
-  padding: 15px;
 }
 
 .sidebar.close ~ .home-section {
