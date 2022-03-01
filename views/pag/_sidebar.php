@@ -75,14 +75,18 @@
         </ul>
       </li>
       <li>
-        <a href="?i=configuração">
-          <i class='bx bx-cog' ></i>
-          <span class="link_name">Configuração</span>
-        </a>
+        <div class="iocn-link">
+          <a href="?i=configuração">
+            <i class='bx bx-cog' ></i>
+            <span class="link_name">Config.</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
         <ul class="sub-menu">
-          <li><a href="?i=proposta">Conf. Proposta</a></li>
-          <li><a href="?i=nova-proposta">Conf. Cliente</a></li>
-          <li><a href="?i=conf-proposta">Conf. Item</a></li>
+          <li><a href="?i=conf-proposta">Conf. Proposta</a></li>
+          <li><a href="?i=conf-cliente">Conf. Cliente</a></li>
+          <li><a href="?i=conf-item">Conf. Item</a></li>
+          <li><a href="?i=new-user">Novo Usuario</a></li>
         </ul>
       </li>
       <li>
@@ -94,7 +98,7 @@
           <div class="profile_name">Nome</div>
           <div class="job">Funcao</div>
         </div>
-        <a href="/views/index.html">
+        <a href="/views/login.php">
             <i class='bx bx-log-out' ></i>
         </a>
       </div>

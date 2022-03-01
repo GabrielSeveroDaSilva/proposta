@@ -19,4 +19,12 @@ class Db
         return $stmt->fetchAll();
     }
 
+    public static function insert($query, $params=[])
+    {
+        $stmt = self::$conn->prepare($query);
+        $stmt->execute($params);
+        return $stmt->rowCount();
+    }
+
+
 }

@@ -220,32 +220,49 @@
   width: 100%;
   display: flex;
 }
-.home-section .create .edit {
+.home-section .create .new {
   padding: 15px;
   border: 2px solid rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   margin: auto;
 }
-.home-section .create .edit label {
+.home-section .create .new label {
   margin: 15px;
   float: left;
-  padding: 4px;
 }
-.home-section .create .edit input {
+.home-section .create .new select {
+  width: 50%;
   margin: 15px;
   padding: 5px 10px;
   float: right;
-  text-align: left;
   border-radius: 5px;
   border: 2px solid rgba(0, 0, 0, 0.4);
   color: #333;
 }
-.home-section .create .edit #text {
+.home-section .create .new #nome, .home-section .create .new #email {
+  margin: 14px;
+  padding: 5px 10px;
+  text-align: left;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  color: #333;
+  float: right;
+}
+.home-section .create .new input {
+  margin: 14px;
+  padding: 5px 10px;
+  text-align: left;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  color: #333;
+  float: right;
+}
+.home-section .create .new #text {
   padding: 10px;
   text-align: left;
   float: right;
 }
-.home-section .create .edit .submit {
+.home-section .create .new .submit {
   margin: auto;
   padding: 10px 40px;
   background-color: #239b23;
@@ -253,7 +270,7 @@
   border-radius: 10px;
   color: #fff;
 }
-.home-section .create .edit .submit:hover {
+.home-section .create .new .submit:hover {
   background-color: #0c410c;
 }
 
@@ -268,6 +285,18 @@
   padding: 15px;
   margin: auto;
 }
+.login img {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.login .box-login {
+  padding: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin: auto;
+}
+
 body {
   background: #fff;
 }

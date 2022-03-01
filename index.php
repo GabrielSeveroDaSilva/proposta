@@ -6,7 +6,7 @@ if(isset($_GET['i'])){
     $pagina = addslashes($_GET['i']);
 }
 
-include './views/header.php';
+include './views/login.php';
 
 
 switch ($pagina) {
@@ -66,8 +66,12 @@ switch ($pagina) {
         include './views/pag/_configuracao.php';
         break;
 
-    case'sair':
-        include './views/';
+    case'new-user':
+        include './views/pag/_new-user.php';
+        break;
+
+    case'login':
+        include './views/login.php';
         break;
         
         

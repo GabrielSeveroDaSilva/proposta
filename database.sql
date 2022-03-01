@@ -1,3 +1,5 @@
+-- Tabela de Usuarios
+
 drop table if exists usuario;
 
 create table usuario (
@@ -10,19 +12,20 @@ create table usuario (
 insert into usuario (id, nome, email, login) 
 values (1, 'Administrador', 'adm@gmail.com', 'admin');
 
+-- Tabela de Clientes
 
+drop table if exists cliente;
 
--- drop table if exists cliente;
+create table cliente (
+    id int not null auto_increment primary key, 
+    nome varchar(255) not null,
+    email varchar(255) not null
+);
 
--- create table cliente (
---     nome varchar(255) not null,
---     email varchar(255) not null,
---     senha varchar(50) not null
--- );
+insert into cliente (id, nome, email)
+values (1, 'Freitas', 'freitas@gmail.com' );
 
--- insert into cliente (ome, email, login)
--- values (1, 'Freitas', 'freitas@gmail.com', );
-
+-- Tabela de Propostas
 
 drop table if exists proposta;
 
@@ -34,12 +37,13 @@ create table proposta (
 
 );
 
+-- Table de Itens
 
 drop table if exists item;
 
 create table item (
     id int not null auto_increment primary key, 
-    proprietario_id int not null , 
-    produto int not null,
+    gestor varchar(255) not null,
+    produto varchar not null
 
 );

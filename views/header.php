@@ -1,7 +1,6 @@
 <?php 
 
 include './views/pag/_sidebar.php';
-include './views/include/_variaveis.php'
 
 
 ?>

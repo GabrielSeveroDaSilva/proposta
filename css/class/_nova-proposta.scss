@@ -11,7 +11,7 @@
         width: 100%;
         display: flex;
         
-        .edit{
+        .new{
             padding: 15px;
             border: 2px solid rgba(0,0,0,.4);
             border-radius: 5px;
@@ -21,19 +21,38 @@
             label{
                 margin: 15px;
                 float: left;
-                padding: 4px;
 
             }
 
-            input{
+            select{
+                width: 50%;
                 margin: 15px;
                 padding: 5px 10px;
                 float: right;
-                text-align: left;
                 border-radius: 5px;
                 border: 2px solid rgba(0,0,0,.4);
                 color: #333;
                 
+            }
+
+            #nome, #email{
+                margin: 14px;
+                padding: 5px 10px;
+                text-align: left;
+                border-radius: 5px;
+                border: 2px solid rgba(0,0,0,.4);
+                color: #333;
+                float: right;
+            }
+
+            input{
+                margin: 14px;
+                padding: 5px 10px;
+                text-align: left;
+                border-radius: 5px;
+                border: 2px solid rgba(0,0,0,.4);
+                color: #333;
+                float: right;
             }
             
             #text{

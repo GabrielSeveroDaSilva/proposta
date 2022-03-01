@@ -36,12 +36,9 @@ $usuario = Db::query($query);
       <span class="text">Novo Usuario</span>
       <br><br>
     </div>
-    <div class="bg">
-      <img src="/img/bg-login.jpg" alt="">
-    </div>
 
-    <div class="login">
-        <form action="" class="box-login" method="post">
+    <div class="create">
+        <form action="" class="new" method="post">
 
                 <label for="">Nome</label>
                 <input type="text" id="nome" name="nome">
@@ -57,3 +54,7 @@ $usuario = Db::query($query);
                 <button type="submit" class="submit" name="add_user" value="1">salvar</button>
             </form>
     </div>
+
+
+
+
