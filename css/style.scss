@@ -2,6 +2,7 @@
 @import "./class/nova-proposta";
 @import "./class/table";
 @import "./class/login";
+@import "./class/fonts";
 
 
 body{
@@ -66,4 +67,25 @@ body{
 .sidebar.close ~ .home-section{
     left: 78px;
     width: calc(100% - 78px);
+}
+
+body{
+
+    .login{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        
+        .box-login{
+            padding: 15px;
+            border: 2px solid rgba(0,0,0,.4);
+            border-radius: 5px;
+            margin: auto;
+    
+        }
+    
+    
+    
+    }
+
 }

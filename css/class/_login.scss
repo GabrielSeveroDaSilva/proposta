@@ -1,23 +1,97 @@
+*{
+    margin: 0; padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
 
+body{
+    background-color: #aeb6bf;
+    
+}
 
 
 
 .login{
-    img{
-        height: 100vh;
-        width: 100%;
-        display: flex;
-    }
     
-    .box-login{
-        padding: 15px;
-        border: 2px solid rgba(0,0,0,.4);
-        border-radius: 5px;
+    height: 100vh;
+    width: 100%;
+    
+    background-color: #fff;
+
+
+    
+
+    form{
+        border: 2px solid rgba(0,0,0,.3);
         margin: auto;
+        padding: 160px 50px ;
+        border-radius: 15px;
+       
+
+        p{
+            text-transform: capitalize;
+            font-size: 50px;
+            text-align: center;
+            margin: auto;
+            color: rgba(0,0,0,.5);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            
+        }    
+
+            
+        .email{
+            width: 100%;
+
+            #email{
+                display: block;
+                width: 100%;
+                height: 34px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+            }
+        }
+
+        .senha{
+
+            width: 100%;
+
+            #senha{
+                display: block;
+                height: 34px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+            }
+        }
+
+
+        button{
+            padding: 15px;
+            border: 1px solid #fff;
+            background-color: #2980b9;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 15px;
+        }
 
     }
+       
+    
+
+        
+    
+
 
 
 
 }
-

@@ -14,8 +14,6 @@ if (isset($_POST['add_proposta']) && $_POST['add_proposta']==1){
       $cliente_id, $data_emissao
     ]); 
     
-    var_dump($insert);
-    echo "adicionado";
   }catch(Exception $e){
 
   }

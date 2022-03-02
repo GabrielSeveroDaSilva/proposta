@@ -19,9 +19,13 @@ $data = Db::query($query);
     <table id="table" class="uk-table uk-table-responsive uk-table-divider">
       <thead id="leg">
           <tr>
-              <th><?php echo $nome; ?></th>
-              <th>Table Heading</th>
-              <th>Table Heading</th>
+              <th>Cód.</th>
+              <br>
+              <th>Cliente Id</th>
+              <br>
+              <th>Data de Emissão</th>
+              <br>
+              <th>Observação</th>
           </tr>
       </thead>
       <tbody>

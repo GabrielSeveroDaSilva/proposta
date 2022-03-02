@@ -1,12 +1,16 @@
 <?php
 
+
+    
+
+
 $pagina = 'home';
 
 if(isset($_GET['i'])){
     $pagina = addslashes($_GET['i']);
 }
 
-include './views/login.php';
+include './views/header.php';
 
 
 switch ($pagina) {
