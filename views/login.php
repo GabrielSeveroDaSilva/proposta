@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 include "../class/Db.php";
 Db::connect();
@@ -18,17 +19,27 @@ if (isset($_POST['submit']) && $_POST['submit']==1){
     ]);
     if(count($data)) {
 
-        
+        $_SESSION["logado"]=$data[0];
 
         header("Location: ../index.php");
     } else{
-        echo "usuario ou senha errados";
+        echo 'email ou senha incorretos';
     }
 }
+    
 
-?>
 
 
+    
+
+
+
+
+
+
+
+
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -6,7 +6,9 @@ create table usuario (
     id int not null auto_increment primary key, 
     nome varchar(255) not null , 
     email varchar(255) not null,
-    senha varchar(50) not null
+    senha varchar(50) not null,
+    uptine datetime,
+    online char(1)
 );
 
 insert into usuario (id, nome, email, login) 

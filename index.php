@@ -1,18 +1,21 @@
 <?php
+session_start();
 
+require "./class/User.php";
 
-    
+require "./class/Utils.php";
 
+echo "-------->";
 
 $pagina = 'home';
 
 if(isset($_GET['i'])){
     $pagina = addslashes($_GET['i']);
 }
-
+//carrega o header
 include './views/header.php';
 
-
+//carrega a página escolhida pelo usuario
 switch ($pagina) {
 
     case'home':

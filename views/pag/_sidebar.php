@@ -98,7 +98,7 @@
           <div class="profile_name">Nome</div>
           <div class="job">Funcao</div>
         </div>
-        <a href="login">
+        <a href="./views/sair.php">
             <i class='bx bx-log-out' ></i>
         </a>
       </div>
