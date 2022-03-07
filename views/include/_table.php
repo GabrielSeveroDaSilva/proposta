@@ -8,14 +8,15 @@ $data = Db::query($query);
 
 ?>
 
-
+<br><br>
 <div class="table">
     <table id="table" class="uk-table uk-table-responsive uk-table-divider">
       <thead id="leg">
           <tr>
-              <th><?php echo $nome; ?></th>
-              <th>Table Heading</th>
-              <th>Table Heading</th>
+              <th>Cód</th>
+              <th>Cliente Id</th>
+              <th>Data Emissão</th>
+              <th>cabeçario</th>
           </tr>
       </thead>
       <tbody>

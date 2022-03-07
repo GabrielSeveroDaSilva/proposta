@@ -1,17 +1,12 @@
 <?php
 session_start();
 
-require "./class/User.php";
 
+require "./class/User.php";
 require "./class/Utils.php";
 
-echo "-------->";
 
-$pagina = 'home';
-
-if(isset($_GET['i'])){
-    $pagina = addslashes($_GET['i']);
-}
+$pagina = 'home'; 
 //carrega o header
 include './views/header.php';
 
@@ -77,17 +72,23 @@ switch ($pagina) {
         include './views/pag/_new-user.php';
         break;
 
-    case'login':
-        include './views/login.php';
-        break;
-        
-        
-
+    
 }
 
-
-
-
-
-
 include './views/footer.php';
+
+// $pageadmin = 'admin';
+
+// //carrega o header
+// include './views/admin/header.php';
+
+// //carrega a página escolhida pelo usuario
+// switch ($pageadmin) {
+
+
+//     case'admin':
+//         include './views/admin/index.php';
+//         break;
+// }
+
+// include './views/admin/footer.php';

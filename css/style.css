@@ -275,16 +275,22 @@
   background-color: #0c410c;
 }
 
-.home-section .table {
-  height: 100vh;
+.home-section #table {
+  border-collapse: collapse;
   width: 100%;
-  display: flex;
 }
-.home-section .table #table {
-  border: 2px solid #333;
-  border-radius: 5px;
-  padding: 15px;
-  margin: auto;
+.home-section #table td, .home-section #table th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+.home-section #table th {
+  background-color: #333;
+  color: #fff;
+}
+.home-section #table tbody tr:nth-child(even) {
+  background-attachment: #f5f5f5;
 }
 
 * {

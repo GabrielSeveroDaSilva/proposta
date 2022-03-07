@@ -87,6 +87,9 @@
           <li><a href="?i=conf-cliente">Conf. Cliente</a></li>
           <li><a href="?i=conf-item">Conf. Item</a></li>
           <li><a href="?i=new-user">Novo Usuario</a></li>
+          <li><a href="./views/admin/admin.php">Login Admin</a></li>
+          
+          
         </ul>
       </li>
       <li>

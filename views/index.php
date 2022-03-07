@@ -1,7 +1,5 @@
 
 
-
-
 <!-- sidebar end -->
 <section class="home-section">
     <div class="home-content">
@@ -13,6 +11,9 @@
         <a href="?i=nova-proposta">Nova Proposta</a>
       </div>
     </div>
+
+
+
     <?php 
     
     @include './views/include/_table.php' ;

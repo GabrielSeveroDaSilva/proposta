@@ -1,13 +1,14 @@
-<?php
+<?php 
+class User{
 
-class User
-{
+
     public static function logado(){
-
+    
         if(!isset($_SESSION['logado'])){
-            include './views/login.php';
-            die;
-        }        
-
+                    include './views/login.php';
+                    die;
+                }  
+    
+    
     }
 }
