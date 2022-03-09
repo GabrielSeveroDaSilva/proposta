@@ -5,90 +5,54 @@ session_start();
 require "./class/User.php";
 require "./class/Utils.php";
 
+include './views/login.php';
 
-$pagina = 'home'; 
-//carrega o header
-include './views/header.php';
+$pagina = 'home';
 
-//carrega a página escolhida pelo usuario
-switch ($pagina) {
-
-    case'home':
-        include './views/index.php';
-        break;
-
-    case'nova-proposta':
-        include './views/pag/_nova-proposta.php';
-        break;
-
-    case'conf-proposta':
-        include './views/pag/_conf-proposta.php';
-        break;
-
-    case'proposta':
-        include './views/pag/_proposta.php';
-        break;
-
-    case'novo-cliente':
-        include './views/pag/_novo-cliente.php';
-        break;
-
-    case'conf-cliente':
-        include './views/pag/_conf-cliente.php';
-        break;
-
-    case'cliente':
-        include './views/pag/_cliente.php';
-        break;
-
-
-    case'novo-item':
-        include './views/pag/_novo-item.php';
-        break;
-
-    case'conf-item':
-        include './views/pag/_conf-item.php';
-        break;
-
-    case'item':
-        include './views/pag/_item.php';
-        break;
-        
-
-    case'grafico':
-        include './views/pag/_grafico.php';
-        break;
-        
-
-    case'sobre':
-        include './views/pag/_sobre.php';
-        break;
-
-    case'configuração':
-        include './views/pag/_configuracao.php';
-        break;
-
-    case'new-user':
-        include './views/pag/_new-user.php';
-        break;
-
-    
+if(isset($_GET['i'])){
+    $pagina = addslashes($_GET['i']);
 }
 
-include './views/footer.php';
+switch ($pagina) {
 
-// $pageadmin = 'admin';
+    case'index':
+        include './index.php';
+        break;
 
-// //carrega o header
-// include './views/admin/header.php';
-
-// //carrega a página escolhida pelo usuario
-// switch ($pageadmin) {
+}
 
 
-//     case'admin':
-//         include './views/admin/index.php';
-//         break;
-// }
+?>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="text">
+            <h1>Projeto de proposta</h1>
+            <h2>sobre</h2>
+            <p>analize de erros</p>
+            <p>segurança do sistema</p>
+            <p>banco de dados / database</p>
+            <p>login / cadastro</p>
+            <p>uso de include</p>
+        </div>
+        <div class="home">
 
-// include './views/admin/footer.php';
+
+            
+
+        </div>
+
+    </div>
+
+
+</body>
+</html> -->

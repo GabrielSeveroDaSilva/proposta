@@ -101,7 +101,7 @@
           <div class="profile_name">Nome</div>
           <div class="job">Funcao</div>
         </div>
-        <a href="./views/sair.php">
+        <a href="?i=sair">
             <i class='bx bx-log-out' ></i>
         </a>
       </div>

@@ -1,6 +1,6 @@
 <?php  
 
-include "./class/Db.php";
+include "../class/Db.php";
 Db::connect();
 
 if (isset($_POST['add_user']) && $_POST['add_user']==1){
@@ -37,7 +37,6 @@ $usuario = Db::query($query);
       <br><br>
     </div>
     <div class="bg">
-      <img src="/img/bg-login.jpg" alt="">
     </div>
 
     <div class="login">

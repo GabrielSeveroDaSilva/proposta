@@ -1,6 +1,6 @@
 <?php  
 
-include "./class/Db.php";
+include "../class/Db.php";
 Db::connect();
 
 if (isset($_POST['add_user']) && $_POST['add_user']==1){

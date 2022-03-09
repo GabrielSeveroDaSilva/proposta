@@ -5,4 +5,4 @@
       <span class="text">Propostas</span>
     </div>
 
-    <?php  include './views/include/_table.php'; ?>
+    <?php  include './include/_table.php'; ?>

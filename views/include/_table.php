@@ -1,6 +1,6 @@
 <?php  
 
-include "./class/Db.php";
+include "../class/Db.php";
 Db::connect();
 $query = "select * from proposta";
 $data = Db::query($query);
