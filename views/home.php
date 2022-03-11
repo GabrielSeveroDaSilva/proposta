@@ -15,7 +15,7 @@
 
 
     <?php 
-    @include './include/_table.php' ;
+    include './views/include/_table.php' ;
     ?>
 
 </section>

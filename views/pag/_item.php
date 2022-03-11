@@ -1,6 +1,6 @@
 <?php  
 
-include "../class/Db.php";
+require_once "./class/class.php";
 Db::connect();
 $query = "select * from item";
 $data = Db::query($query);

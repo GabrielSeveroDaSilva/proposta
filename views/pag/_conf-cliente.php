@@ -1,30 +1,13 @@
 <?php  
 
-include "../class/Db.php";
+
+require_once "./class/class.php";
 Db::connect();
+$query = "select * from cliente";
+$data = Db::query($query);
 
-if (isset($_POST['add_user']) && $_POST['add_user']==1){
-  $nome = $_POST['nome'];
-  $email = $_POST['email'];
-  $senha = $_POST['senha'];
 
-  $sql = "INSERT INTO usuario (nome, email, senha) VALUES (?,?,?)";
-  try{
-    $insert = Db::insert($sql, [
-      $nome, $email, $senha
-    ]); 
-    
-    var_dump($insert);
-    echo "adicionado";
-  }catch(Exception $e){
 
-  }
-  
-
-}
-
-$query = "select * from usuario";
-$usuario = Db::query($query);
 
 
 ?>
@@ -33,26 +16,40 @@ $usuario = Db::query($query);
 <section class="home-section">
     <div class="home-content">
       <i class='bx bx-menu' ></i>
-      <span class="text">Novo Usuario</span>
+      <span class="text">Configuração de Clientes</span>
       <br><br>
     </div>
     <div class="bg">
     </div>
 
-    <div class="login">
-        <form action="" class="box-login" method="post">
+    <div class="config">
 
-                <label for="">Nome</label>
-                <input type="text" id="nome" name="nome">
-                <br>
-                <label for="dia">Email</label>
-                <input type="email" id="email" name="email"/>
-                <br>
-                <label for="dia">Senha</label>
-                <input type="password" id="senha" name="senha"/>
-                <br>
+    <table id="table" class="uk-table uk-table-responsive uk-table-divider">
+      <thead id="leg">
+          <tr>
+              <th>Cód</th>
+              <th>Nome</th>
+              <th>Email</th>
+          </tr>
+      </thead>
+      <tbody>
+      <?php  
+        foreach($data as $p ){?>
+    
+          <tr>
+              <td><?= $p["id"]?></td>
+              <td><?= $p["nome"]?></td>
+              <td><?= $p["email"]?></td>
+              <i class="bi bi-pencil"><a href="edit.php"></a></i>
+          </tr>
+        
+        <?php }?> 
+      </tbody>
+    </table>
 
 
-                <button type="submit" class="submit" name="add_user" value="1">salvar</button>
-            </form>
+
+    <!-- echo "<tr>".$user_data['']."</tr>"; -->
+
+    <!-- <td><?= $p[""]?></td> -->
     </div>

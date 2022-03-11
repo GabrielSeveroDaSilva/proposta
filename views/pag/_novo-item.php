@@ -1,6 +1,6 @@
 <?php  
 
-include "../class/Db.php";
+require_once "./class/class.php";
 Db::connect();
 
 if (isset($_POST['add_item']) && $_POST['add_item']==1){

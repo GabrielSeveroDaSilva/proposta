@@ -1,13 +1,13 @@
 <?php
 
-include "./class/Db.php";
 Db::connect();
+
 
 
 if (isset($_POST['submit']) && $_POST['submit']==1){
 
     $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
     $query = "SELECT * FROM usuario WHERE email = :email && senha = :senha ";
 
@@ -17,20 +17,21 @@ if (isset($_POST['submit']) && $_POST['submit']==1){
     ]);
 
 
+
     if(count($data)) {
     
+        
         $_SESSION["logado"] = $data[0];
-    
-        header("Location: ?i=index");
+        include "./index.php";
+        
+        
     } else{
         echo 'email ou senha incorretos';
     }
 
-    
-
-    
-
 }
+
+
 
 ?>
 
@@ -56,7 +57,7 @@ if (isset($_POST['submit']) && $_POST['submit']==1){
     <div class="login">
         
 
-        
+    
     <form action="" method="post">
 
         <p>Login</p>

@@ -1,12 +1,12 @@
 <?php  
 
-include "../class/Db.php";
+require_once "./class/class.php";
 Db::connect();
 
 if (isset($_POST['add_user']) && $_POST['add_user']==1){
   $nome = $_POST['nome'];
   $email = $_POST['email'];
-  $senha = $_POST['senha'];
+  $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
   $sql = "INSERT INTO usuario (nome, email, senha) VALUES (?,?,?)";
   try{
