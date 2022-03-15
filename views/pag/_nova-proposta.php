@@ -1,7 +1,6 @@
 <?php  
 
 require_once "./class/class.php";
-include "./class/Date.php";
 Db::connect();
 
 if (isset($_POST['add_proposta']) && $_POST['add_proposta']==1){

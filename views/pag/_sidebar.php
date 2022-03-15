@@ -1,7 +1,7 @@
   <!-- siderbar start -->
   <div class="sidebar close">
     <div class="logo-details">
-      <i class='bx bxl-c-plus-plus'></i>
+      <i class='bx bx-paste' ></i>
       <span class="logo_name">MENU</span>
     </div>
     <ul class="nav-links">

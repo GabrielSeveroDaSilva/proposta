@@ -1,3 +1,5 @@
 <?php
+
 unset($_SESSION["logado"]);
-header("Location: login");
+
+header("Location: ./login.php");

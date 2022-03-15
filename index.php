@@ -1,17 +1,12 @@
 <?php
-session_start();
-
-require "./class/User.php";
-require "./class/Utils.php";
 require_once "./class/class.php";
-include "./class/Date.php";
 
 User::logado();
+
 
 // definir a pagina atual pela url
 
 $pagina = 'home';
-$login = 'login';
 
 if(isset($_GET['i'])){
     $pagina = addslashes($_GET['i']);
@@ -20,7 +15,6 @@ if(isset($_GET['i'])){
 
 
 //carrega o header
-
 
 
 include './views/header.php';

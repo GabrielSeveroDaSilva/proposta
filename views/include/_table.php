@@ -14,9 +14,11 @@ $data = Db::query($query);
       <thead id="leg">
           <tr>
               <th>Cód</th>
+              <th>Proposta</th>
               <th>Cliente Id</th>
               <th>Data Emissão</th>
-              <th>cabeçario</th>
+              <th>Observação</th>
+              <th>Editar/Delete</th>
           </tr>
       </thead>
       <tbody>
@@ -25,9 +27,17 @@ $data = Db::query($query);
     
           <tr>
               <td><?= $p["id"]?></td>
+              <td><?= $p["nome_proposta"]?></td>
               <td><?= $p["cliente_id"]?></td>
               <td><?= $p["data_emissao"]?></td>
               <td><?= $p["cabecalho"]?></td>
+              <td>
+
+                <i class='bx bx-pencil'></i>
+                <i class='bx bx-trash'></i>
+
+
+              </td>
           </tr>
         
         <?php }?> 

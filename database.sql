@@ -33,6 +33,7 @@ drop table if exists proposta;
 
 create table proposta (
     id int not null auto_increment primary key, 
+    nome_proposta int not null,
     cliente_id int not null , 
     data_emissao date not null,
     cabecalho text 

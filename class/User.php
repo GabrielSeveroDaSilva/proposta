@@ -4,10 +4,9 @@ class User{
 
     public static function logado(){
     
-        if(!isset($_SESSION['logado'])){
-            include './views/login.php';
-            die();          
+        if(!isset($_SESSION["logado"])){
+            include './login.php';
+            die();
         }
-    
     }
 }

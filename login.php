@@ -3,11 +3,10 @@
 Db::connect();
 
 
-
 if (isset($_POST['submit']) && $_POST['submit']==1){
 
     $email = $_POST['email'];
-    $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+    $senha = $_POST['senha'];
 
     $query = "SELECT * FROM usuario WHERE email = :email && senha = :senha ";
 
@@ -17,19 +16,20 @@ if (isset($_POST['submit']) && $_POST['submit']==1){
     ]);
 
 
-
+    
     if(count($data)) {
     
-        
         $_SESSION["logado"] = $data[0];
-        include "./index.php";
-        
+        header("./index.php");
         
     } else{
         echo 'email ou senha incorretos';
     }
+    
 
 }
+
+
 
 
 

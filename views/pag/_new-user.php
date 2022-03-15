@@ -6,7 +6,7 @@ Db::connect();
 if (isset($_POST['add_user']) && $_POST['add_user']==1){
   $nome = $_POST['nome'];
   $email = $_POST['email'];
-  $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+  $senha = $_POST['senha'];
 
   $sql = "INSERT INTO usuario (nome, email, senha) VALUES (?,?,?)";
   try{
@@ -47,7 +47,7 @@ $usuario = Db::query($query);
                 <input type="email" id="email" name="email"/>
                 <br>
                 <label for="dia">Senha</label>
-                <input type="password" id="senha" name="senha"/>
+                <input type="text" id="senha" name="senha"/>
                 <br>
 
 
