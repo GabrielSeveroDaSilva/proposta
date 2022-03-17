@@ -13,8 +13,7 @@ if (isset($_POST['add_item']) && $_POST['add_item']==1){
       $gestor, $produto
     ]); 
     
-    var_dump($insert);
-    echo "adicionado";
+    
   }catch(Exception $e){
 
   }
@@ -29,28 +28,33 @@ $item = Db::query($query);
 ?>
 
 
+
 <section class="home-section">
     <div class="home-content">
       <i class='bx bx-menu' ></i>
-      <span class="text">Novo Item</span>
+      <span class="text">Nova Proposta</span>
       <br><br>
-    </div>
 
-    <div class="create">
+      
+    </div>
+    <div class="form">
         <form action="" class="new" method="post">
+          <div class="proposta-details">
+            <div class="input-box">
+              <span class="details">Gestor:</span>
+              <input type="text" name="gestor" id="box" placeholder="Nome do Gestor...">
+            </div>
+            <div class="input-box">
+              <span class="details">Produto:</span>
+              <input type="text" name="produto" id="box" placeholder="Nome do Produto...">
+            </div>
+            <br>
+            <div class="button">
+              <button class="submit" type="submit" name="add_item" value="1" >Adcionar Item</button>
+            </div>
 
-                <label for="">Gestor</label>
-                <input type="text" id="gestor" name="gestor">
-                <br>
-                <label for="dia">Produto</label>
-                <input type="text" id="produto" name="produto"/>
-                <br>
 
-
-                <button type="submit" class="submit" name="add_item" value="1">salvar</button>
-            </form>
-    </div>
-
-
-
-
+          </div>
+          
+          
+        </form>

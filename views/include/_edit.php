@@ -1,42 +1,38 @@
-<?php  
+<?php
 
 require_once "./class/class.php";
 Db::connect();
 
-if (isset($_POST['add_proposta']) && $_POST['add_proposta']==1){
-  $nome_proposta = $_POST['nome_proposta'];
-  $cliente_id = $_POST['cliente_id'];
-  $data_emissao = Date::toUS($_POST['data_emissao']);
-  $cabecalho = $_POST['cabecalho'];
 
-  $sql = "INSERT INTO proposta (nome_proposta, cliente_id, data_emissao, cabecalho) VALUES (?,?,?,?)";
-  try{
-    $insert = Db::insert($sql, [
-      $nome_proposta, $cliente_id, $data_emissao, $cabecalho
-    ]); 
+if (isset($_POST['edit_proposta']) && $_POST['edit_proposta']==1){
+    $nome_proposta = $_POST['nome_proposta'];
+    $cliente_id = $_POST['cliente_id'];
+    $data_emissao = Date::toUS($_POST['data_emissao']);
+    $cabecalho = $_POST['cabecalho'];
+  
+    $sql = "UPDATE proposta (nome_proposta, cliente_id, data_emissao, cabecalho) VALUES (?,?,?,?)";
+    try{
+      $insert = Db::insert($sql, [
+        $nome_proposta, $cliente_id, $data_emissao, $cabecalho
+      ]); 
+      
+  
+    }catch(Exception $e){
+  
+  
+    }
     
-
-  }catch(Exception $e){
-
-
+  
   }
   
-
-}
-
-$query = "select * from cliente";
-$clientes = Db::query($query);
-
-$query = "select * from item";
-$item = Db::query($query);
-
-
-?>
-
-
-
-
-
+  $query = "select * from cliente";
+  $clientes = Db::query($query);
+  
+  $query = "select * from item";
+  $item = Db::query($query);
+  
+  
+  ?>
 
 <section class="home-section">
     <div class="home-content">
@@ -77,7 +73,7 @@ $item = Db::query($query);
             </div>
             <br>
             <div class="button">
-              <button class="submit" type="submit" name="add_proposta" value="1" >Adcionar Proposta</button>
+              <button class="submit" type="submit" name="edit_proposta" value="1" >Adcionar Proposta</button>
             </div>
 
 
@@ -87,10 +83,3 @@ $item = Db::query($query);
         </form>
             
     </div>
-
-
-
-
-
-    
-    

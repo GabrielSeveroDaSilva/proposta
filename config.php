@@ -8,7 +8,7 @@ $dbName= 'proposta';
 
 $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
-if($conexao->connect_errno)
+if($conexao->connect_erro)
 {
     echo "Erro";
 }else{

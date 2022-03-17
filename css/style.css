@@ -1,13 +1,4 @@
-/* Google Font Import - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 .sidebar {
   position: fixed;
   top: 0;
@@ -216,62 +207,57 @@
   font-size: 12px;
 }
 
-.home-section .create {
+.home-section .form {
   height: 100vh;
-  width: 100%;
+  background: #bdc3c7;
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
 }
-.home-section .create .new {
+.home-section .form .new {
+  background-color: #fff;
+  max-width: 500px;
+  width: 100%;
   padding: 15px;
   border: 2px solid rgba(0, 0, 0, 0.4);
   border-radius: 5px;
-  margin: auto;
+  text-transform: uppercase;
 }
-.home-section .create .new label {
-  margin: 15px;
-  float: left;
+.home-section .form .new .proposta-details {
+  display: block;
 }
-.home-section .create .new select {
+.home-section .form .new .proposta-details .details {
   width: 50%;
-  margin: 15px;
-  padding: 5px 10px;
-  float: right;
+  float: left;
+  margin: 5px;
+}
+.home-section .form .new .proposta-details #caixa {
+  padding: 20px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  border: 2px solid rgba(0, 0, 0, 0.4);
-  color: #333;
 }
-.home-section .create .new #nome, .home-section .create .new #email {
-  margin: 14px;
-  padding: 5px 10px;
-  text-align: left;
+.home-section .form .new .proposta-details #box, .home-section .form .new .proposta-details #saida {
+  padding: 5px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  border: 2px solid rgba(0, 0, 0, 0.4);
-  color: #333;
-  float: right;
 }
-.home-section .create .new input {
-  margin: 14px;
-  padding: 5px 10px;
-  text-align: left;
-  border-radius: 5px;
-  border: 2px solid rgba(0, 0, 0, 0.4);
-  color: #333;
-  float: right;
+.home-section .form .new .proposta-details .button {
+  width: 100%;
 }
-.home-section .create .new #text {
-  padding: 10px;
-  text-align: left;
-  float: right;
-}
-.home-section .create .new .submit {
+.home-section .form .new .proposta-details .button button {
   margin: auto;
   padding: 10px 40px;
   background-color: #239b23;
   border: 2px solid #0c410c;
   border-radius: 10px;
   color: #fff;
+  width: 100%;
 }
-.home-section .create .new .submit:hover {
+.home-section .form .new .proposta-details .button button:hover {
   background-color: #0c410c;
 }
 
@@ -284,6 +270,14 @@
   border: 1px solid #ddd;
   text-align: center;
   font-size: 16px;
+}
+.home-section #table i {
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  padding: 2px;
+  font-size: 20px;
+  border-radius: 5px;
 }
 .home-section #table th {
   background-color: #333;
@@ -360,6 +354,13 @@ body {
   width: 100%;
   cursor: pointer;
   border-radius: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {

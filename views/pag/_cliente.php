@@ -14,6 +14,9 @@ $data = Db::query($query);
       <i class='bx bx-menu' ></i>
       <span class="text">Clientes</span>
       <br><br>
+      <div class="button">
+        <a href="?i=novo-cliente">Novo Cliente</a>
+      </div>
     </div>
     <div class="table">
         <table id="table" class="uk-table uk-table-responsive uk-table-divider">

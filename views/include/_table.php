@@ -33,7 +33,7 @@ $data = Db::query($query);
               <td><?= $p["cabecalho"]?></td>
               <td>
 
-                <i class='bx bx-pencil'></i>
+                <i class='bx bx-pencil'><a href="?i=edit"></a></i>
                 <i class='bx bx-trash'></i>
 
 

@@ -25,7 +25,7 @@
         <ul class="sub-menu">
           <li><a  href="?i=proposta">Proposta</a></li>
           <li><a href="?i=nova-proposta">Criar Proposta</a></li>
-          <li><a href="?i=conf-proposta">Config. Propostas</a></li>
+          <li><a href="?i=edit-proposta">Editar Propostas</a></li>
         </ul>
       </li>
       <li>
@@ -39,12 +39,12 @@
         <ul class="sub-menu">
           <li><a  href="?i=cliente">Cliente</a></li>
           <li><a href="?i=novo-cliente">Novo Cliente</a></li>
-          <li><a href="?i=conf-cliente">Config. Clientes</a></li>
+          <li><a href="?i=edit-cliente">Editar Clientes</a></li>
         </ul>
       </li>
       <li>
         <div class="iocn-link">
-          <a href="?i=cliente">
+          <a href="?i=item">
           <i class='bx bxs-package'></i>
             <span class="link_name">Item</span>
           </a>
@@ -53,18 +53,10 @@
         <ul class="sub-menu">
           <li><a  href="?i=item">Item</a></li>
           <li><a href="?i=novo-item">Novo Item</a></li>
-          <li><a href="?i=conf-item">Config. Item</a></li>
+          <li><a href="?i=edit-item">Editar Item</a></li>
         </ul>
       </li>
-      <li>
-        <a href="?i=grafico">
-          <i class='bx bx-line-chart' ></i>
-          <span class="link_name">Gráfico</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="?i=grafico">Gráfico</a></li>
-        </ul>
-      </li>
+      
       <li>
         <a href="?i=sobre">
         <i class='bx bx-help-circle' ></i>
@@ -83,10 +75,10 @@
           <i class='bx bxs-chevron-down arrow' ></i>
         </div>
         <ul class="sub-menu">
-          <li><a href="?i=conf-proposta">Conf. Proposta</a></li>
-          <li><a href="?i=conf-cliente">Conf. Cliente</a></li>
-          <li><a href="?i=conf-item">Conf. Item</a></li>
-          <li><a href="?i=new-user">Novo Usuario</a></li>
+          <li><a href="?i=edit-proposta">Editar Proposta</a></li>
+          <li><a href="?i=edit-cliente">Editar Cliente</a></li>
+          <li><a href="?i=edit-item">Editar Item</a></li>
+          <li><a href="?i=novo-usuario">Novo Usuario</a></li>
           <li><a href="./views/admin/admin.php">Login Admin</a></li>
           
           

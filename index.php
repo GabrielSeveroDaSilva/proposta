@@ -2,6 +2,7 @@
 require_once "./class/class.php";
 
 User::logado();
+Db::connect();
 
 
 // definir a pagina atual pela url
@@ -30,8 +31,8 @@ switch ($pagina) {
         include './views/pag/_nova-proposta.php';
         break;
 
-    case'conf-proposta':
-        include './views/pag/_conf-proposta.php';
+    case'edit-proposta':
+        include './views/pag/_edit-proposta.php';
         break;
 
     case'proposta':
@@ -42,8 +43,8 @@ switch ($pagina) {
         include './views/pag/_novo-cliente.php';
         break;
 
-    case'conf-cliente':
-        include './views/pag/_conf-cliente.php';
+    case'edit-cliente':
+        include './views/pag/_edit-cliente.php';
         break;
 
     case'cliente':
@@ -55,8 +56,8 @@ switch ($pagina) {
         include './views/pag/_novo-item.php';
         break;
 
-    case'conf-item':
-        include './views/pag/_conf-item.php';
+    case'edit-item':
+        include './views/pag/_edit-item.php';
         break;
 
     case'item':
@@ -77,8 +78,12 @@ switch ($pagina) {
         include './views/pag/_configuracao.php';
         break;
 
-    case'new-user':
-        include './views/pag/_new-user.php';
+    case'novo-usuario':
+        include './views/pag/_novo-usuario.php';
+        break;
+
+    case'edit':
+        include './views/include/_edit.php';
         break;
 
     case'sair':
