@@ -11,6 +11,9 @@
         <a href="?i=nova-proposta">Nova Proposta</a>
       </div>
     </div>
+    <div class="button">
+      <a href="?i=edit-proposta">Nova Proposta</a>
+    </div>
 
 
 

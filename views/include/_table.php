@@ -1,9 +1,13 @@
 <?php  
 
+include './views/include/_edit.php';
 require_once "./class/class.php";
 Db::connect();
+
 $query = "select * from proposta";
 $data = Db::query($query);
+
+$id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
 
 
 ?>
@@ -31,13 +35,9 @@ $data = Db::query($query);
               <td><?= $p["cliente_id"]?></td>
               <td><?= $p["data_emissao"]?></td>
               <td><?= $p["cabecalho"]?></td>
-              <td>
+              
+              <td><?php echo "<a href='?i=edit-proposta?id=". $p['id']."'>Editar</a>";?></td>
 
-                <i class='bx bx-pencil'><a href="?i=edit"></a></i>
-                <i class='bx bx-trash'></i>
-
-
-              </td>
           </tr>
         
         <?php }?> 

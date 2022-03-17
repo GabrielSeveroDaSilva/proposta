@@ -2,7 +2,6 @@
 require_once "./class/class.php";
 
 User::logado();
-Db::connect();
 
 
 // definir a pagina atual pela url
@@ -32,7 +31,7 @@ switch ($pagina) {
         break;
 
     case'edit-proposta':
-        include './views/pag/_edit-proposta.php';
+        include './edit_proposta.php';
         break;
 
     case'proposta':

@@ -4,6 +4,7 @@ require_once "./class/class.php";
 Db::connect();
 
 if (isset($_POST['add_proposta']) && $_POST['add_proposta']==1){
+  
   $nome_proposta = $_POST['nome_proposta'];
   $cliente_id = $_POST['cliente_id'];
   $data_emissao = Date::toUS($_POST['data_emissao']);

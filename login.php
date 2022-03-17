@@ -57,25 +57,25 @@ if (isset($_POST['submit']) && $_POST['submit']==1){
     <div class="login">
         
 
+        <form action="" method="post">
     
-    <form action="" method="post">
-
-        <p>Login</p>
-        <br>
-
-        <div class="email">
-            <input type="text" name="email" id="email" placeholder="User Email">
-        </div>
-        <br>
-        <div class="senha">
-            <input type="password" name="senha" id="senha" placeholder="Password">
-        </div>
-        <br>
-        <button type="submit" name="submit" value="1" > Entrar</button>        
+            <p>Login</p>
+            <br>
+    
+            <div class="email">
+                <input type="text" name="email" id="email" placeholder="User Email">
+            </div>
+            <br>
+            <div class="senha">
+                <input type="password" name="senha" id="senha" placeholder="Password">
+            </div>
+            <br>
+            <button type="submit" name="submit" value="1" > Entrar</button>        
+                
             
-        
-    </form>
+        </form>
     
+    </div>
         
 
     
