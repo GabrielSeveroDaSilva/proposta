@@ -1,0 +1,42 @@
+.uk-table {
+    background: #5dade2;
+
+    th{
+        font-weight: 600;
+        font-size: 15px;
+        color: #FFF;
+        border: 2px solid #cacfd2;
+        vertical-align: middle;
+
+    }
+    
+
+    td{
+        border: 2px solid #cacfd2;
+        
+        &.status{
+            background: red;
+            text-align: center;
+    
+            &.analizando{
+                background: #f4d03f;
+                color: #7d6608;
+            }
+    
+            &.aprovado{
+                background: #52be80;
+                color: #145a32;
+            }
+    
+            &.cancelado{
+                background: #ec7063;
+                color: #641e16;
+            }
+        }
+    }
+
+    
+
+}
+
+
