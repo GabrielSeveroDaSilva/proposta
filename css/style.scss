@@ -16,6 +16,39 @@ body{
     background: #fff;
 }
 
+.header{
+
+    .uk-navbar-item {
+
+        color: #fff;
+
+    }
+
+    .uk-navbar-container:not(.uk-navbar-transparent) {
+
+        background: #1b4f72;
+        text-transform: uppercase;
+        text-align: center;
+        list-style: none;
+
+        li{
+            padding: 10px 15px;
+
+            a{
+                color: #fff;
+            }
+        }
+
+
+
+
+    }
+
+
+
+
+}
+
 
 .container{
     display: flex;
@@ -79,6 +112,12 @@ body{
 
         
     }
+
+    
+
+
+
+
     p{
         margin: 15px;
         font-size: 15px;
@@ -109,6 +148,8 @@ body{
             }
         } 
     }
+
+    
 
 }
 

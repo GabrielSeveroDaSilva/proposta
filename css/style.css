@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background-color: #1b4f72;
+  background-color: #2874a6;
   text-align: center;
 }
 .uk-navbar-container:not(.uk-navbar-transparent) li a {
@@ -8,61 +8,55 @@
 }
 
 .uk-navbar-dropdown {
-  background: #333;
+  background: #fff;
 }
 
-.home-section .form {
-  height: 100vh;
-  background: #bdc3c7;
-  background: linear-gradient(to right, #2c3e50, #bdc3c7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Poppins", sans-serif;
-}
-.home-section .form .new {
-  background-color: #fff;
-  max-width: 500px;
-  width: 100%;
+.home-section .form-criar {
+  border: 0.5px solid #d0d3d4;
   padding: 15px;
-  border: 2px solid rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  text-transform: uppercase;
+  width: 100%;
+  margin: 15px;
 }
-.home-section .form .new .proposta-details {
-  display: block;
-}
-.home-section .form .new .proposta-details .details {
+.home-section .form-criar .uk-form-controls {
   width: 50%;
-  float: left;
-  margin: 5px;
+  float: right;
 }
-.home-section .form .new .proposta-details #caixa {
-  padding: 20px;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-.home-section .form .new .proposta-details #box, .home-section .form .new .proposta-details #saida {
-  padding: 5px;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-.home-section .form .new .proposta-details .button {
-  width: 100%;
-}
-.home-section .form .new .proposta-details .button button {
-  margin: auto;
-  padding: 10px 40px;
+.home-section .uk-button:not(:disabled) {
+  padding: 0px 40px;
+  right: 15px;
   background-color: #239b23;
   border: 2px solid #0c410c;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #fff;
-  width: 100%;
+  margin-right: 15px;
+  text-decoration: none;
+  margin: 15px;
 }
-.home-section .form .new .proposta-details .button button:hover {
+.home-section .uk-button:not(:disabled):hover {
   background-color: #0c410c;
+}
+.home-section .box-itens-p {
+  border: 0.5px solid #d0d3d4;
+  padding: 15px;
+  margin: 15px;
+}
+.home-section .excluir {
+  padding: 10px 40px;
+  right: 15px;
+  background-color: #cb4335;
+  border: 2px solid #641e16;
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+.home-section .excluir:hover {
+  background-color: #ec7063;
+}
+.home-section .modal-example .form {
+  border: 0.5px solid #d0d3d4;
+  padding: 15px;
+  background: #0c410c;
 }
 
 .uk-table {
@@ -76,6 +70,7 @@
   vertical-align: middle;
 }
 .uk-table td {
+  text-align: center;
   border: 2px solid #cacfd2;
 }
 .uk-table td.status {
@@ -173,6 +168,22 @@ body {
 
 body {
   background: #fff;
+}
+
+.header .uk-navbar-item {
+  color: #fff;
+}
+.header .uk-navbar-container:not(.uk-navbar-transparent) {
+  background: #1b4f72;
+  text-transform: uppercase;
+  text-align: center;
+  list-style: none;
+}
+.header .uk-navbar-container:not(.uk-navbar-transparent) li {
+  padding: 10px 15px;
+}
+.header .uk-navbar-container:not(.uk-navbar-transparent) li a {
+  color: #fff;
 }
 
 .container {

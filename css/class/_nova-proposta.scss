@@ -5,86 +5,71 @@
 
 .home-section {
 
+    .form-criar{
+        border: 0.5px solid #d0d3d4;
+        padding: 15px;
+        width: 100%;
+        margin: 15px;
 
-    .form{
-        height: 100vh;
-        background: #bdc3c7;
-        background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
-        background: linear-gradient(to right, #2c3e50, #bdc3c7);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Poppins',sans-serif;
-        
-        .new{
-            background-color: #fff;
-            max-width: 500px;
-            width: 100%;
-            padding: 15px;
-            border: 2px solid rgba(0,0,0,.4);
-            border-radius: 5px;
-            text-transform: uppercase;
+        .uk-form-label{
+        }
 
-            .proposta-details{
-                display: block;
-                
+        .uk-form-controls{
+            width: 50%;
+            float: right;
+        }
+    }
 
-                .input-box{
-                }
-                .details{
-                    width: 50%;
-                    float: left;
-                    margin: 5px;
-                }
-                
-                #caixa{
-                    padding: 20px;
-                    width: 100%;
-                    background: rgba(0,0,0,.1);
-                    border-radius: 5px;
-                }
+    .uk-button:not(:disabled) {
 
-                #box, #saida{
-                    padding: 5px;
-                    width: 100%;
-                    background: rgba(0,0,0,.1);
-                    border-radius: 5px;
+        padding: 0px 40px;
+        right: 15px;
+        background-color: #239b23;
+        border: 2px solid #0c410c;
+        border-radius: 5px;
+        color: #fff;
+        margin-right: 15px;
+        text-decoration: none;
+        margin: 15px;
 
-                }
-
-                .button{
-                    width: 100%;
-
-                    button{
-
-                        margin: auto;
-                        padding: 10px 40px;
-                        background-color: #239b23;
-                        border: 2px solid #0c410c;
-                        border-radius: 10px;
-                        color: #fff;
-                        width: 100%;
-
-                        &:hover{
-                            background-color: #0c410c;
-                        }
-                    }
-
-                    
-                }
-            }
-            
-
-
-            
-
+        &:hover{
+            background-color: #0c410c;
         }
         
-
-
-
+        
 
     }
+
+    .box-itens-p{
+        border: 0.5px solid #d0d3d4;
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .excluir{
+        padding: 10px 40px;
+        right: 15px;
+        background-color: #cb4335;
+        border: 2px solid #641e16;
+        border-radius: 5px;
+        color: #fff;
+        margin-right: 15px;
+        text-decoration: none;
+
+        &:hover{
+            background-color: #ec7063;
+        }
+    }
+
+    .modal-example{
+        
+        .form{
+            border: .5px solid #d0d3d4;
+            padding: 15px;
+            background: #0c410c;
+        }
+    }
+
     
     
 }

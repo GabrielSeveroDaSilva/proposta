@@ -29,7 +29,42 @@
       <title>Proposta</title>
   </head>
 <body>
+  <div class="header">
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
 
+        <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+
+        </div>
+
+        <div class="uk-navbar-right">
+
+        <li class="uk-active">
+          <a href="#">conta</a>
+          <div class="uk-navbar-dropdown">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li class="uk-active"><a href="#">CONFIGURÇÃO</a></li>
+                  <li class="uk-active"><a href="#">NOVO USUARIO</a></li>
+                  <li class="uk-active"><a href="#">SAIR</a></li>
+              </ul>
+          </div>
+        </li>
+        
+        <li>
+          <a href="#">mais</a>
+          <div class="uk-navbar-dropdown">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li class="uk-active"><a href="#">CONFIGURÇÃO</a></li>
+                  <li class="uk-active"><a href="#">CONFIGURÇÃO</a></li>
+                  <li class="uk-active"><a href="#">CONFIGURÇÃO</a></li>
+              </ul>
+          </div>
+        </li>
+
+        </div>
+    </nav>
+</div>
+    
 <?php 
 
 include './views/include/navbar.php';

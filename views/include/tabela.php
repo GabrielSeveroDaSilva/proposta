@@ -1,7 +1,7 @@
 <table id="tabela" class="uk-table uk-table-hover uk-table-striped uk-table-middle" style="width:100%">
         <thead>
             <tr>
-                <th>Nome</th>
+                <th>Proposta</th>
                 <th>Cliente</th>
                 <th>Data de abertura</th>
                 <th>Tipo de movimentação</th>
@@ -19,58 +19,58 @@
         </thead>
         <tbody>
             
-            <td>a</td>
-            <td>Cliente</td>
-            <td>Data de abertura</td>
-            <td>Tipo de movimentação</td>
-            <td>c</td>
-            <td>Código do produto</td>
-            <td>Descrição do produto</td>
-            <td>Informações adicionais do produto</td>
-            <td>Qtde</td>
-            <td>Valor unitário</td>
-            <td>Valor total dos produtos</td>
-            <td>Valor total com desconto</td>
-            <td>Prazo de entrega(dias)</td>
-            <td class="status cancelado">Status</td>
+            <td>CP 000001</td>
+            <td>000001 - cliente</td>
+            <td>22/03/22</td>
+            <td>Venda de produto para comercialização</td>
+            <td>001</td>
+            <td>PA 00001</td>
+            <td>Sacola plástica</td>
+            <td>---</td>
+            <td>10 FD</td>
+            <td>100 por FD</td>
+            <td>1.000,00</td>
+            <td>900,00</td> <!-- (10% de desconto) -->
+            <td>30</td>
+            <td class="status cancelado">Cancelado</td>
 
 
         </tbody>
         <tbody>
             
-            <td>b</td>
-            <td>Cliente</td>
-            <td>Data de abertura</td>
-            <td>Tipo de movimentação</td>
-            <td>b</td>
-            <td>Código do produto</td>
-            <td>Descrição do produto</td>
-            <td>Informações adicionais do produto</td>
-            <td>Qtde</td>
-            <td>Valor unitário</td>
-            <td>Valor total dos produtos</td>
-            <td>Valor total com desconto</td>
-            <td>Prazo de entrega(dias)</td>
-            <td class="status analizando">Status</td>
+        <td>CP 000002</td>
+            <td>000001 - cliente</td>
+            <td>22/03/22</td>
+            <td>Venda de produto para comercialização</td>
+            <td>001</td>
+            <td>PA 00001</td>
+            <td>Sacola plástica</td>
+            <td>---</td>
+            <td>10 FD</td>
+            <td>100 por FD</td>
+            <td>1.000,00</td>
+            <td>900,00</td> <!-- (10% de desconto) -->
+            <td>30</td>
+            <td class="status analizando">Analizando</td>
 
 
         </tbody>
         <tbody>
             
-            <td>c</td>
-            <td>Cliente</td>
-            <td>Data de abertura</td>
-            <td>Tipo de movimentação</td>
-            <td>a</td>
-            <td>Código do produto</td>
-            <td>Descrição do produto</td>
-            <td>Informações adicionais do produto</td>
-            <td>Qtde</td>
-            <td>Valor unitário</td>
-            <td>Valor total dos produtos</td>
-            <td>Valor total com desconto</td>
-            <td>Prazo de entrega(dias)</td>
-            <td class="status aprovado">Status</td>
+        <td>CP 000003</td>
+            <td>000001 - cliente</td>
+            <td>22/03/22</td>
+            <td>Venda de produto para comercialização</td>
+            <td>001</td>
+            <td>PA 00001</td>
+            <td>Sacola plástica</td>
+            <td>---</td>
+            <td>10 FD</td>
+            <td>100 por FD</td>
+            <td>1.000,00</td>
+            <td>900,00</td> <!-- (10% de desconto) -->
+            <td>30</td>
+            <td class="status aprovado">Enviado para cliente</td>
 
 
         </tbody>

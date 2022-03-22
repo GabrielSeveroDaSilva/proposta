@@ -10,7 +10,7 @@
     <span class="text">Proposta</span>
     <br><br>
     <div class="button">
-      <a href="?i=edit-proposta">Nova Proposta</a>
+      <a href="?i=nova-proposta">Nova Proposta</a>
     </div>
     <span class="parag">propostas criadas</span>
 

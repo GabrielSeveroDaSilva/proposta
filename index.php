@@ -27,62 +27,11 @@ switch ($pagina) {
         break;
 
     case'nova-proposta':
-        include './views/pag/_nova-proposta.php';
-        break;
-
-    case'edit-proposta':
-        include './edit_proposta.php';
-        break;
-
-    case'proposta':
-        include './views/pag/_proposta.php';
-        break;
-
-    case'novo-cliente':
-        include './views/pag/_novo-cliente.php';
-        break;
-
-    case'edit-cliente':
-        include './views/pag/_edit-cliente.php';
-        break;
-
-    case'cliente':
-        include './views/pag/_cliente.php';
-        break;
-
-
-    case'novo-item':
-        include './views/pag/_novo-item.php';
+        include './views/pag/novo/_nova-proposta.php';
         break;
 
     case'edit-item':
         include './views/pag/_edit-item.php';
-        break;
-
-    case'item':
-        include './views/pag/_item.php';
-        break;
-        
-
-    case'grafico':
-        include './views/pag/_grafico.php';
-        break;
-        
-
-    case'sobre':
-        include './views/pag/_sobre.php';
-        break;
-
-    case'configuração':
-        include './views/pag/_configuracao.php';
-        break;
-
-    case'novo-usuario':
-        include './views/pag/_novo-usuario.php';
-        break;
-
-    case'edit':
-        include './views/include/_edit.php';
         break;
 
     case'sair':

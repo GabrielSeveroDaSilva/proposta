@@ -1,14 +1,14 @@
-Nome
-Cliente
-Data de abertura
-Tipo de movimentação
-Item
-Código do produto
-Descrição do produto
-Informações adicionais do produto
-Qtde
-Valor unitário
-Valor total dos produtos
-Valor total com desconto
-Prazo de entrega
-Status
+proposta
+cliente_id
+data_de_abertura
+tipo_de_movimentação
+item
+codigo_do_produto
+descrição_do_produto
+informações_do_produto
+qtde
+valor_unitario
+valor_total_dos_produtos
+valor_total_com_desconto
+prazo_de_entrega
+status
