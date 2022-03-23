@@ -18,60 +18,25 @@
             </tr>
         </thead>
         <tbody>
-            
-            <td>CP 000001</td>
-            <td>000001 - cliente</td>
-            <td>22/03/22</td>
-            <td>Venda de produto para comercialização</td>
-            <td>001</td>
-            <td>PA 00001</td>
-            <td>Sacola plástica</td>
-            <td>---</td>
-            <td>10 FD</td>
-            <td>100 por FD</td>
-            <td>1.000,00</td>
-            <td>900,00</td> <!-- (10% de desconto) -->
-            <td>30</td>
-            <td class="status cancelado">Cancelado</td>
+        <?php  
+            foreach($data as $p ){?>
+        
+            <td><?= $p["id"]?></td>
+            <td><?= $p["cliente_id"]?></td>
+            <td><?= $p["data_de_abertura"]?></td>
+            <td><?= $p["tipo_de_movimentação"]?></td>
+            <td><?= $p["item"]?></td>
+            <td><?= $p["codigo_do_produto"]?></td>
+            <td><?= $p["descrição_do_produto"]?></td>
+            <td><?= $p["informações_do_produto"]?></td>
+            <td><?= $p["qtde"]?></td>
+            <td><?= $p["valor_unitario"]?></td>
+            <td><?= $p["valor_total_dos_produtos"]?></td>
+            <td><?= $p["prazo_de_entrega"]?></td>
+            <td><?= $p["status"]?></td>
 
-
-        </tbody>
-        <tbody>
-            
-        <td>CP 000002</td>
-            <td>000001 - cliente</td>
-            <td>22/03/22</td>
-            <td>Venda de produto para comercialização</td>
-            <td>001</td>
-            <td>PA 00001</td>
-            <td>Sacola plástica</td>
-            <td>---</td>
-            <td>10 FD</td>
-            <td>100 por FD</td>
-            <td>1.000,00</td>
-            <td>900,00</td> <!-- (10% de desconto) -->
-            <td>30</td>
-            <td class="status analizando">Analizando</td>
-
-
-        </tbody>
-        <tbody>
-            
-        <td>CP 000003</td>
-            <td>000001 - cliente</td>
-            <td>22/03/22</td>
-            <td>Venda de produto para comercialização</td>
-            <td>001</td>
-            <td>PA 00001</td>
-            <td>Sacola plástica</td>
-            <td>---</td>
-            <td>10 FD</td>
-            <td>100 por FD</td>
-            <td>1.000,00</td>
-            <td>900,00</td> <!-- (10% de desconto) -->
-            <td>30</td>
-            <td class="status aprovado">Enviado para cliente</td>
-
+           
+            <?php }?> 
 
         </tbody>
         <tfoot>

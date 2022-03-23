@@ -1,5 +1,5 @@
 @import "./class/navbar";
-@import "./class/nova-proposta";
+@import "./class/form";
 @import "./class/tabela";
 @import "./class/login";
 @import "./class/fonts";
@@ -130,8 +130,9 @@ body{
         text-transform: capitalize;
     }
     .button{
-        margin-left: auto;
+        // margin-left: auto;
         margin-bottom: 15px;
+        display: flex;
 
         a{
             padding: 10px 40px;

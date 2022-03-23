@@ -12,3 +12,10 @@ valor_total_dos_produtos
 valor_total_com_desconto
 prazo_de_entrega
 status
+
+
+nome
+email
+cidade
+bairro
+rua-av

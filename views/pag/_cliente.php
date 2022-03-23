@@ -11,41 +11,51 @@ $data = Db::query($query);
 
 <section class="home-section">
     <div class="home-content">
-      <i class='bx bx-menu' ></i>
-      <span class="text">Clientes</span>
-      <br><br>
-      <div class="button">
-        <a href="?i=novo-cliente">Novo Cliente</a>
-      </div>
+      
     </div>
+
+    <p>Você está em :</p>
+    <span class="text">Proposta</span>
+    <br><br>
+    <div class="button">
+      <a href="?i=novo-cliente">Novo Cliente</a>
+    </div>
+    <br><br>
     <div class="table">
-        <table id="table" class="uk-table uk-table-responsive uk-table-divider">
-          <thead id="leg">
+      <table id="tabela" class="uk-table uk-table-hover uk-table-striped uk-table-middle" style="width:100%">
+          <thead>
               <tr>
-                  <th>Cód.</th>
-                  <th>Nome</th>
-                  <th>Email</th>
+                <th>nome</th>
+                <th>email</th>
+                <th>cidade</th>
+                <th>bairro</th>
+                <th>rua-av</th>
               </tr>
           </thead>
           <tbody>
-            <?php  
+          <?php  
             foreach($data as $c ){?>
         
-              <tr>
-                  <td><?= $c["id"]?></td>
-                  <td><?= $c["nome"]?></td>
-                  <td><?= $c["email"]?></td>
-              </tr>
-            
+            <td><?= $c["id"]?></td>
+            <td><?= $c["nome"]?></td>
+            <td><?= $c["email"]?></td>
+            <td><?= $c["cidade"]?></td>
+            <td><?= $c["bairro"]?></td>
+            <td><?= $c["rua_av"]?></td>
+
+
             <?php }?> 
-              
-              
           </tbody>
-        </table>
+          <tfoot>
+              <tr>
+                <th>nome</th>
+                <th>email</th>
+                <th>cidade</th>
+                <th>bairro</th>
+                <th>rua-av</th>
+              </tr>
+          </tfoot>
+      </table>
     </div>
-    
 
-
-
-    
-
+        

@@ -26,13 +26,34 @@ switch ($pagina) {
         include './views/home.php';
         break;
 
-    case'nova-proposta':
-        include './views/pag/novo/_nova-proposta.php';
+    case'proposta':
+        include './views/pag/_proposta.php';
         break;
 
-    case'edit-item':
-        include './views/pag/_edit-item.php';
+    case'clientes':
+        include './views/pag/_cliente.php';
         break;
+
+    case'item':
+        include './views/pag/_item.php';
+        break;
+
+    case'':
+        include './views/';
+        break;
+
+    case'nova-proposta':
+        include './views/pag/_nova-proposta.php';
+        break;
+
+    case'novo-item':
+        include './views/pag/_novo-item.php';
+        break;
+
+    case'novo-cliente':
+        include './views/pag/_novo-cliente.php';
+        break;
+
 
     case'sair':
         include './views/sair.php';

@@ -21,7 +21,11 @@ drop table if exists cliente;
 create table cliente (
     id int not null auto_increment primary key, 
     nome varchar(255) not null,
-    email varchar(255) not null
+    email varchar(255) not null,
+    cidade varchar(255) not null,
+    bairro varchar(255) not null,
+    rua-av varchar(255) not null,
+    numero int not null
 );
 
 insert into cliente (id, nome, email)
@@ -42,8 +46,7 @@ create table proposta (
     informacoes_do_produto text,
     qtde int not null,
     valor_unitario int not null,
-    valor_total_produtos int not null,
-    valor_total_desconto int not null,
+    valor_total_produto int not null,
     prazo_de_entrega int not null,
     status varchar(30) not null
 
@@ -54,8 +57,12 @@ create table proposta (
 drop table if exists item;
 
 create table item (
-    id int not null auto_increment primary key, 
-    gestor varchar(255) not null,
-    produto varchar not null
-
+    id int not null auto_increment primary key,
+    produto varchar(255) not null,
+    tipo_de_movimentacao varchar(30) not null ,
+    unud_medida varchar(30) not null ,
+    informacoes_do_produto text,
+    qtde int not null,
+    valor_unitario int not null,
+    valor_total_produto int not null
 );

@@ -11,15 +11,68 @@
   background: #fff;
 }
 
+.home-section {
+  width: 100%;
+}
 .home-section .form-criar {
   border: 0.5px solid #d0d3d4;
   padding: 15px;
-  width: 100%;
+  width: 75%;
   margin: 15px;
+  border-radius: 5px;
+  text-align: left;
+}
+.home-section .form-criar p {
+  font-weight: bolder;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 .home-section .form-criar .uk-form-controls {
   width: 50%;
   float: right;
+}
+.home-section .form-criar .salvar {
+  padding: 10px 40px;
+  right: 15px;
+  font-weight: 600;
+  background-color: #239b23;
+  border: 2px solid #0c410c;
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+  margin: 15px;
+}
+.home-section .form-criar .salvar:hover {
+  background-color: #0c410c;
+}
+.home-section .form-criar .salvar-criar {
+  padding: 10px 40px;
+  right: 15px;
+  font-weight: 600;
+  background-color: #3498db;
+  border: 2px solid #1b4f72;
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+.home-section .form-criar .salvar-criar:hover {
+  background-color: #1b4f72;
+}
+.home-section .form-criar .cancelar {
+  padding: 10px 40px;
+  right: 15px;
+  font-weight: 600;
+  background-color: #cb4335;
+  border: 2px solid #641e16;
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 15px;
+  text-decoration: none;
+}
+.home-section .form-criar .cancelar:hover {
+  background-color: #641e16;
 }
 .home-section .uk-button:not(:disabled) {
   padding: 0px 40px;
@@ -40,7 +93,7 @@
   padding: 15px;
   margin: 15px;
 }
-.home-section .excluir {
+.home-section .box-itens-p .excluir {
   padding: 10px 40px;
   right: 15px;
   background-color: #cb4335;
@@ -50,13 +103,19 @@
   margin-right: 15px;
   text-decoration: none;
 }
-.home-section .excluir:hover {
+.home-section .box-itens-p .excluir:hover {
   background-color: #ec7063;
 }
-.home-section .modal-example .form {
+.home-section .box-itens-p .modal-example .form {
   border: 0.5px solid #d0d3d4;
   padding: 15px;
   background: #0c410c;
+}
+
+.table {
+  border: 2px solid #cacfd2;
+  padding: 15px;
+  margin: 15px;
 }
 
 .uk-table {
@@ -241,8 +300,8 @@ body {
   text-transform: capitalize;
 }
 .home-section .button {
-  margin-left: auto;
   margin-bottom: 15px;
+  display: flex;
 }
 .home-section .button a {
   padding: 10px 40px;
