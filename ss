@@ -1,15 +1,16 @@
+
+id
 proposta
 cliente_id
 data_de_abertura
-tipo_de_movimentação
+movimentação
 item
 codigo_do_produto
 descrição_do_produto
 informações_do_produto
 qtde
 valor_unitario
-valor_total_dos_produtos
-valor_total_com_desconto
+valor_total
 prazo_de_entrega
 status
 

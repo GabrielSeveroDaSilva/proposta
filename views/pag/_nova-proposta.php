@@ -11,22 +11,23 @@ if (isset($_POST['add_proposta']) && $_POST['add_proposta']==1){
 $proposta = $_POST['proposta'] ;
 $cliente_id = $_POST['cliente_id'] ;
 $data_de_abertura = Date::toUS($_POST['data_de_abertura']);
-$tipo_de_movimentação = $_POST['tipo_de_movimentacao'] ;
+$movimentacao = $_POST['movimentacao'] ;
 $item = $_POST['item'] ;
 $codigo_do_produto = $_POST['codigo_do_produto'] ;
 $descrição_do_produto = $_POST['descricao_do_produto'] ;
 $informações_do_produto = $_POST['informacoes_do_produto'] ;
 $qtde = $_POST['qtde'] ;
 $valor_unitario = $_POST['valor_unitario'] ;
-$valor_total_produtos = $_POST['valor_total_produtos'] ;
+$valor_total = $_POST['valor_total'] ;
 $prazo_de_entrega = $_POST['prazo_de_entrega'] ;
 $status = $_POST['status'] ;
+$unid_medida = $_POST['unid_medida'] ;
   
   
-  $sql = "INSERT INTO proposta (proposta, cliente_id, data_de_abertura, tipo_de_movimentacao, item, codigo_do_produto, descricao_do_produto, informacoes_do_produto, qtde, valor_total_produtos, valor_unitario, prazo_de_entrega, status) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+  $sql = "INSERT INTO proposta (proposta, cliente_id, data_de_abertura, movimentacao, unid_medida, item, codigo_do_produto, descricao_do_produto, informacoes_do_produto, qtde, valor_total, valor_unitario, prazo_de_entrega, status) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
   try{
     $insert = Db::insert($sql, [
-      $proposta, $cliente_id, $data_de_abertura, $tipo_de_movimentacao, $item, $codigo_do_produto, $descricao_do_produto, $informacoes_do_produto, $qtde, $valor_total_produtos, $valor_unitario, $prazo_de_entrega, $status
+      $proposta, $cliente_id, $data_de_abertura, $movimentacao, $item, $codigo_do_produto, $descricao_do_produto, $informacoes_do_produto, $qtde, $valor_total, $valor_unitario, $prazo_de_entrega, $status
     ]); 
     
     
@@ -44,6 +45,10 @@ $clientes = Db::query($query);
 $query = "select * from item";
 $item = Db::query($query);
 
+$query = "select * from movimentacao";
+$movimentacao = Db::query($query);
+
+
 
 ?>
 <section class="home-section">
@@ -55,8 +60,10 @@ $item = Db::query($query);
 
 <span class="text">Criar Proposta</span>
 <br><br>
+
+
 <!-- form de criar proposta -->
-  <div class="form-criar">
+  <div class="form">
     <!-- função feita para escolher o cliente pelo nome e mosta na planilha o id -->
     <div class="uk-margin">
       <form action="" method="post">
@@ -75,9 +82,9 @@ $item = Db::query($query);
       <div class="uk-margin">
           <label class="uk-form-label" for="form-horizontal-select">Tipo de movimentação</label>
           <div class="uk-form-controls">
-              <select class="uk-select" id="form-horizontal-select" name="tipo_de_movimentacao" >
-                <?php foreach ($tipo_de_movimentacao as $tm) {?> 
-                  <option value="<?= $tm['id']?>"><?= $c['nome']?></option>
+              <select class="uk-select" id="form-horizontal-select" name="movimentacao" >
+                <?php foreach ($movimentacao as $m) {?> 
+                  <option value="<?= $m['movimentacao']?>"><?= $m['movimentacao']?></option>
                 <?php }?>
               </select>
           </div>
@@ -127,7 +134,7 @@ $item = Db::query($query);
 
 <span class="text">Adicionar Item</span>
 <br><br>
-<div class="box-itens-p">
+<div class="table">
 
 
   <!-- Botao modal -->
@@ -253,9 +260,9 @@ $item = Db::query($query);
       <div class="uk-margin">
           <label class="uk-form-label" for="form-horizontal-select">Unidade de medida</label>
           <div class="uk-form-controls">
-              <select class="uk-select" id="form-horizontal-select" name="unid_med" >
+              <select class="uk-select" id="form-horizontal-select" name="unid_medida" >
                 <?php foreach ($item as $i) {?> 
-                  <option><?= $i['unid_med']?></option>
+                  <option><?= $i['unid_medida']?></option>
                 <?php }?>
               </select>
           </div>

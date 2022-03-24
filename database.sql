@@ -25,11 +25,11 @@ create table cliente (
     cidade varchar(255) not null,
     bairro varchar(255) not null,
     rua-av varchar(255) not null,
-    numero int not null
+    numero varchar(10) not null
 );
 
-insert into cliente (id, nome, email)
-values (1, 'Freitas', 'freitas@gmail.com' );
+insert into cliente (id, nome, email, cidade, bairro,rua, numero) 
+values (1, 'Maria', 'maria@gmail.com','nova mutum','Jardim', 'Ortencias','1111');
 
 -- Tabela de Propostas
 
@@ -39,14 +39,14 @@ create table proposta (
     nome varchar(255) not null,
     cliente_id int not null ,
     data_de_abertura date not null,
-    tipo_de_movimentacao varchar(30) not null ,
+    movimentacao varchar(255) not null ,
     item varchar(60) not null,
     codigo_do_produto varchar(6) null,
     descricao_do_produto text,
     informacoes_do_produto text,
     qtde int not null,
     valor_unitario int not null,
-    valor_total_produto int not null,
+    valor_total int not null,
     prazo_de_entrega int not null,
     status varchar(30) not null
 
@@ -59,10 +59,25 @@ drop table if exists item;
 create table item (
     id int not null auto_increment primary key,
     produto varchar(255) not null,
-    tipo_de_movimentacao varchar(30) not null ,
-    unud_medida varchar(30) not null ,
+    movimentacao varchar(255) not null ,
+    unid_medida varchar(60) not null ,
     informacoes_do_produto text,
     qtde int not null,
     valor_unitario int not null,
-    valor_total_produto int not null
+    valor_total int not null
 );
+
+insert into item (id, produto, unid_medida, movimentacao, informacoes_do_produto, qtde, valor_unitario, valor_total ) 
+values (1, 'Sacolas plésticas reforçadas premiu','FARDO','Venda de produto para comecialização','','1','50','50');
+
+
+drop table if exists movimentacao;
+
+create table tipo_de_movimentacao (
+    id int not null auto_increment primary key,
+   movimentacao varchar(255) not null
+);
+
+insert into tipo_de_movimentacao (id, movimentacao) 
+values (1, 'movimentacao');
+

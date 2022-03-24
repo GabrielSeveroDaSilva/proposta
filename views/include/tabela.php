@@ -1,4 +1,4 @@
-<table id="tabela" class="uk-table uk-table-hover uk-table-striped uk-table-middle" style="width:100%">
+<table id="tabela" class="uk-table uk-table-hover uk-table-striped uk-table-milled" style="width:100%">
         <thead>
             <tr>
                 <th>Proposta</th>

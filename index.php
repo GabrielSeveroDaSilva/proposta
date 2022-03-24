@@ -26,7 +26,7 @@ switch ($pagina) {
         include './views/home.php';
         break;
 
-    case'proposta':
+    case'propostas':
         include './views/pag/_proposta.php';
         break;
 
@@ -53,7 +53,10 @@ switch ($pagina) {
     case'novo-cliente':
         include './views/pag/_novo-cliente.php';
         break;
-
+        
+    case'tipo-movimentacao':
+        include './views/pag/_tipo-movimentacao.php';
+        break;
 
     case'sair':
         include './views/sair.php';

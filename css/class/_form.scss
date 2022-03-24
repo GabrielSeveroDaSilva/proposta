@@ -5,15 +5,32 @@
 
 .home-section {
 
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 
-    .form-criar{
+    
+
+    .form{
         border: 0.5px solid #d0d3d4;
         padding: 15px;
         width: 75%;
-        margin: 15px;
+        margin: auto;
         border-radius: 5px;
         text-align: left;
+        box-shadow:0px 0px 111px -20px rgba(0, 0, 0, 0.5);
+        
+        label{
+            font-weight: 600;
+            font-size: 15px;
+
+        }
+
+        h1{
+            font-weight: bolder;
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+        }
 
         p{
             font-weight: bolder;
@@ -52,6 +69,7 @@
             color: #fff;
             margin-right: 15px;
             text-decoration: none;
+            margin: 15px;
 
             &:hover{
                 background-color: #1b4f72;
@@ -67,12 +85,31 @@
             color: #fff;
             margin-right: 15px;
             text-decoration: none;
+            margin: 15px;
 
             &:hover{
                 background-color: #641e16;
             }
         }
+
+        .excluir{
+            padding: 10px 40px;
+            right: 15px;
+            background-color: #cb4335;
+            border: 2px solid #641e16;
+            border-radius: 5px;
+            color: #fff;
+            margin-right: 15px;
+            text-decoration: none;
+
+            &:hover{
+                background-color: #ec7063;
+            }
+        }
     }
+
+    
+    
 
     .uk-button:not(:disabled) {
 
@@ -94,36 +131,7 @@
 
     }
 
-    .box-itens-p{
-        border: 0.5px solid #d0d3d4;
-        padding: 15px;
-        margin: 15px;
-       
-
-        .excluir{
-            padding: 10px 40px;
-            right: 15px;
-            background-color: #cb4335;
-            border: 2px solid #641e16;
-            border-radius: 5px;
-            color: #fff;
-            margin-right: 15px;
-            text-decoration: none;
-
-            &:hover{
-                background-color: #ec7063;
-            }
-        }
-
-        .modal-example{
-            
-            .form{
-                border: .5px solid #d0d3d4;
-                padding: 15px;
-                background: #0c410c;
-            }
-        }
-    }
+    
     
     
 }

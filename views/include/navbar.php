@@ -11,7 +11,7 @@
             <li class="uk-active"><a href="?i=home">home</a></li>
             <li class="uk-active"><a href="?i=propostas">propostas</a></li>
             <li class="uk-active"><a href="?i=clientes">clientes</a></li>
-            <li class="uk-active"><a href="?i=itens">Itens</a></li>
+            <li class="uk-active"><a href="?i=item">itens</a></li>
             
         </ul>
 

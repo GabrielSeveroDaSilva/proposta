@@ -25,10 +25,16 @@
 
       <!-- style -->
       <link rel="stylesheet" href="/css/style.css">
+      <script>
+        
 
+      </script>
       <title>Proposta</title>
   </head>
-<body>
+<body onLoad="loading()">
+  <div class="overlay">
+      <div class="load"></div>
+  </div>
   <div class="header">
     <nav class="uk-navbar-container" uk-navbar>
         <div class="uk-navbar-left">
@@ -54,7 +60,7 @@
           <a href="#">mais</a>
           <div class="uk-navbar-dropdown">
               <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li class="uk-active"><a href="#">CONFIGURÇÃO</a></li>
+                  <li class="uk-active"><a href="?i=tipo-movimentacao">Tipo de Movimentaçao</a></li>
                   <li class="uk-active"><a href="#">CONFIGURÇÃO</a></li>
                   <li class="uk-active"><a href="#">CONFIGURÇÃO</a></li>
               </ul>
@@ -69,12 +75,11 @@
 
 include './views/include/navbar.php';
 
-
-
-
-
 ?>
-
+<section class="home-section">
+    <div class="home-content">
+      
+    </div>
 
 
 

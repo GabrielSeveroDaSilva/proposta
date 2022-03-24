@@ -41,7 +41,7 @@ $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
     </div>
     <span class="parag">propostas criadas</span>
 
-
+<div class="table">
     <table id="tabela" class="uk-table uk-table-hover uk-table-striped uk-table-middle" style="width:100%">
         <thead>
             <tr>
@@ -103,8 +103,7 @@ $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
             </tr>
         </tfoot>
     </table>
-
-</section>
+</div>
 
 
 
