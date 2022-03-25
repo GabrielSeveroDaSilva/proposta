@@ -6,14 +6,10 @@ Db::connect();
 $query = "select * from item";
 $data = Db::query($query);
 
-
 ?>
 
+</div>
 
-<section class="home-section">
-    <div class="home-content">
-      
-    </div>
 
     <p>Você está em :</p>
     <span class="text">Novo Item</span>
@@ -28,12 +24,7 @@ $data = Db::query($query);
               <tr>
                 <th>Id</th>
                 <th>Produto</th>
-                <th>tipo de movimentação</th>
                 <th>Informações Adicionais do Produto</th>
-                <th>Unidade de Medida </th>
-                <th>Qtde</th>
-                <th>Valor Unitario</th>
-                <th>Valor Total</th>
               </tr>
           </thead>
           <tbody>
@@ -42,12 +33,7 @@ $data = Db::query($query);
             <tr>
               <td><?= $i["id"]?></td>
               <td><?= $i["produto"]?></td>
-              <td><?= $i["movimentacao"]?></td>
               <td><?= $i["informacoes_do_produto"]?></td>
-              <td><?= $i["unid_medida"]?></td>
-              <td><?= $i["qtde"]?></td>
-              <td><?= $i["valor_unitario"]?></td>
-              <td><?= $i["valor_total"]?></td>
             </tr>
             <?php }?> 
           </tbody>
@@ -55,12 +41,7 @@ $data = Db::query($query);
             <tr>
               <th>Id</th>
               <th>Produto</th>
-              <th>tipo de movimentação</th>
               <th>Informações Adicionais do Produto</th>
-              <th>Unidade de Medida </th>
-              <th>Qtde</th>
-              <th>Valor Unitario</th>
-              <th>Valor Total</th>
             </tr>
           </tfoot>
       </table>

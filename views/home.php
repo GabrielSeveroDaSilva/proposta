@@ -22,11 +22,7 @@ $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
 
 
 <!-- sidebar end -->
-<section class="home-section">
-    <div class="home-content">
-      
-    </div>
-
+</div>
     <p>Você está em :</p>
     <span class="text">Proposta</span>
     <br><br>

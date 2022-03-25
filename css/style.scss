@@ -21,6 +21,8 @@ body{
     background: #fff;
 }
 
+
+
 .header{
     width: 100%;
 
@@ -98,9 +100,8 @@ body{
 
 
 .home-section{
+    margin: 15px;
 
-    height: 100vh;
-    width: 100%;
 
     .home-content{
         background: #e5e7e9;
@@ -127,7 +128,6 @@ body{
 
 
     p{
-        margin: 15px;
         font-size: 15px;
     }
 
@@ -156,9 +156,7 @@ body{
                 background-color: #0c410c;
             }
         } 
-    }
-
-    
+    }    
 
 }
 

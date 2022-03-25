@@ -35,12 +35,7 @@ $cliente = Db::query($query);
 
 
 ?>
-
-<section class="home-section">
-  <div class="home-content">
-    
-  </div>
-
+</div>
   <p>Você está em :</p>
 
   <span class="text">Novo Cliente</span>

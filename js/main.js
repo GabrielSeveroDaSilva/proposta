@@ -31,32 +31,24 @@ function loading(){
           
   document.getElementsByClassName("overlay")[0].style.display = "none";
 
+};
+
+function formatarMoeda() {
+  var elemento = document.getElementById('valor');
+  var valor = elemento.value;
+  
+
+  valor = valor + '';
+  valor = parseInt(valor.replace(/[\D]+/g, ''));
+  valor = valor + '';
+  valor = valor.replace(/([0-9]{2})$/g, ",$1");
+
+  if (valor.length > 6) {
+      valor = valor.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1,$2");
+  }
+
+  elemento.value = valor;
+  if(valor == 'NaN') elemento.value = '';
+  
 }
-
-// calcular
-
-// document.querySelector("#qtde").addEventListener("change", atualizarPreco)
-// document.querySelector("#js").addEventListener("change", atualizarPreco)
-// document.querySelector("#layout-sim").addEventListener("change", atualizarPreco)
-// document.querySelector("#layout-nao").addEventListener("change", atualizarPreco)
-// document.querySelector("#prazo").addEventListener("change", function () { 
-//     const prazo = document.querySelector("#prazo").value
-//     document.querySelector("label[for=prazo]").innerHTML = `Prazo: ${prazo} semanas`
-//     atualizarPreco()
-// })
-
-// function atualizarPreco(){
-//     const qtde = document.querySelector("#qtde").value
-//     const temJS = document.querySelector("#js").checked
-//     const incluiLayout = document.querySelector("#layout-sim").checked
-//     const prazo = document.querySelector("#prazo").value
-
-//     let preco = qtde * 100;
-//     if (temJS) preco *= 1.1
-//     if (incluiLayout) preco += 500
-//     let taxaUrgencia = 1 - prazo*0.1;
-//     preco *= 1 + taxaUrgencia
-
-//     document.querySelector("#preco").innerHTML = `R$ ${}`
-// }
 

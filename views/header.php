@@ -60,9 +60,7 @@
           <a href="#">mais</a>
           <div class="uk-navbar-dropdown">
               <ul class="uk-nav uk-navbar-dropdown-nav">
-                  <li class="uk-active"><a href="?i=tipo-movimentacao">Tipo de Movimentaçao</a></li>
-                  <li class="uk-active"><a href="#">CONFIGURÇÃO</a></li>
-                  <li class="uk-active"><a href="#">CONFIGURÇÃO</a></li>
+                  <li class="uk-active"><a href="?i=configuracao">configuração</a></li>
               </ul>
           </div>
         </li>

@@ -45,16 +45,16 @@ $clientes = Db::query($query);
 $query = "select * from item";
 $item = Db::query($query);
 
-$query = "select * from movimentacao";
-$movimentacao = Db::query($query);
+$query = "select * from configuracao";
+$configuracao = Db::query($query);
+
+$query = "select * from proposta_item";
+$proposta_item = Db::query($query);
 
 
 
 ?>
-<section class="home-section">
-    <div class="home-content">
-      
-    </div>
+</div>
 
 <p>Você está em :</p>
 
@@ -67,15 +67,15 @@ $movimentacao = Db::query($query);
     <!-- função feita para escolher o cliente pelo nome e mosta na planilha o id -->
     <div class="uk-margin">
       <form action="" method="post">
-          <label class="uk-form-label" for="form-horizontal-select">Cliente</label>
-          <div class="uk-form-controls">
-              <select class="uk-select" id="form-horizontal-select" name="cliente_id" >
-                <?php foreach ($clientes as $c) {?> 
-                  <option value="<?= $c['id']?>"><?= $c['nome']?></option>
-                <?php }?>
-              </select>
-          </div>
-      </div>
+      <div class="uk-margin">
+        <label class="uk-form-label" for="form-horizontal-select">Cliente</label>
+        <div class="uk-form-controls">
+            <select class="uk-select" id="form-horizontal-select" name="cliente_id" >
+              <?php foreach ($clientes as $c) {?> 
+                <option value="<?= $c['id']?>"><?= $c['nome']?></option>
+              <?php }?>
+            </select>
+        </div>
 
       <!-- tipo movimentação -->
 
@@ -83,8 +83,8 @@ $movimentacao = Db::query($query);
           <label class="uk-form-label" for="form-horizontal-select">Tipo de movimentação</label>
           <div class="uk-form-controls">
               <select class="uk-select" id="form-horizontal-select" name="movimentacao" >
-                <?php foreach ($movimentacao as $m) {?> 
-                  <option value="<?= $m['movimentacao']?>"><?= $m['movimentacao']?></option>
+                <?php foreach ($configuracao as $conf) {?> 
+                  <option value="<?= $conf['movimentacao']?>"><?= $conf['movimentacao']?></option>
                 <?php }?>
               </select>
           </div>
@@ -103,7 +103,7 @@ $movimentacao = Db::query($query);
       <div class="uk-margin">
           <label class="uk-form-label" for="form-stacked-text">Vendedor</label>
           <div class="uk-form-controls">
-              <input class="uk-input" id="form-stacked-text" type="text" placeholder="">
+              <input  class="uk-input" id="form-stacked-text" type="text" placeholder="">
           </div>
       </div>
 
@@ -124,6 +124,16 @@ $movimentacao = Db::query($query);
             </div>
       </div>
 
+      <br><br>
+
+            <!-- botoes  -->
+          <button class="salvar" type="submit" name="add_item" value="1" >Adcionar Cliente</button>
+
+          <button name="add" value="1" class="salvar-criar">Salvar e Adicinar novo cliente<a href="#" class="uk-icon-link" uk-icon="trash"></a></button>
+
+          <button class="cancelar">Cancelar<a href="#" class="uk-icon-link" uk-icon="trash"></a></button>
+
+
     </form>
 
 
@@ -131,16 +141,65 @@ $movimentacao = Db::query($query);
 <br><br>
 
 
+<h2>Edição de item de proposta</h2>
+<span class="text">Informações do item da proposta</span> 
 
-<span class="text">Adicionar Item</span>
+<div class="form">
+  <form action="" method="post">
+    <label class="uk-form-label" for="form-horizontal-select">Produto</label>
+    <div class="uk-form-controls">
+        <select class="uk-select" id="form-horizontal-select" name="cliente_id" >
+          <?php foreach ($clientes as $c) {?> 
+            <option value="<?= $c['id']?>"><?= $c['nome']?></option>
+          <?php }?>
+        </select>
+    </div>
+
+    <!-- tipo movimentação -->
+
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-horizontal-select">Informação do Produto</label>
+        <div class="uk-form-controls">
+            <select class="uk-select" id="form-horizontal-select" name="movimentacao" >
+              <?php foreach ($configuracao as $conf) {?> 
+                <option value="<?= $conf['movimentacao']?>"><?= $conf['movimentacao']?></option>
+              <?php }?>
+            </select>
+        </div>
+    </div>
+
+    
+    <!-- representante -->
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Quantidade</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-stacked-text" type="text" placeholder="">
+        </div>
+    </div>
+
+    <!-- vendedor -->
+    <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Valor Unitario</label>
+        <div class="uk-form-controls">
+            <input  class="uk-input" id="form-stacked-text" type="text" placeholder="">
+        </div>
+    </div>
+
+
+    <
+    <br><br>
+
+          <!-- botoes  -->
+        <button class="salvar" type="submit" name="add_item" value="1" >Adcionar Item</button>
+
+        <button class="excluir">Excluir<a href="#" class="uk-icon-link" uk-icon="trash"></a></button>
+
+
+  </form>
+</div>
 <br><br>
+
 <div class="table">
-
-
-  <!-- Botao modal -->
-    <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-example">Open</button>
-
-
   <!-- botao de excluir -->
     <button class="excluir">Excluir<a href="#" class="uk-icon-link" uk-icon="trash"></a></button>
 
@@ -148,9 +207,7 @@ $movimentacao = Db::query($query);
       <table id="tabela" class="uk-table uk-table-striped uk-table-middle" style="width:100%">
         <thead>
             <tr>
-                <th>Marcar</th>
                 <th>Item</th>
-                <th>Código do produto</th>
                 <th>Descrição do produto</th>
                 <th>Informações adicionais do produto</th>
                 <th>Qtde</th>
@@ -159,143 +216,36 @@ $movimentacao = Db::query($query);
                 
             </tr>
         </thead>
-        
-            <td><input class="uk-checkbox" type="checkbox" checked></td>
-            <td>001</td>
-            <td>PA 00001</td>
-            <td>Sacola plástica</td>
-            <td>---</td>
-            <td>10 FD</td>
-            <td>100 por FD</td>
-            <td>1.000,00</td>
+        <tbody>
+          <?php 
+            foreach($item as $i ){?>
+              <tr>
+                <td><?= $i["id"]?></td>
+                <td><?= $i["produto"]?></td>
+                <td><?= $i["informacoes_do_produto"]?></td>
+              <?php }?>
+          <?php 
+            foreach($proposta_item as $pi ){?>
 
+                <td><?= $pi["qtde"]?></td>
+                <td><?= $pi["unid_medida"]?></td>
+                <td><?= $pi["valor_unitario"]?></td>
 
+              </tr>
+            <?php }?>
+          
         </tbody>
-        </thead>
         
-            <td><input class="uk-checkbox" type="checkbox" checked></td>
-            <td>001</td>
-            <td>PA 00001</td>
-            <td>Sacola plástica</td>
-            <td>---</td>
-            <td>10 FD</td>
-            <td>100 por FD</td>
-            <td>1.000,00</td>
-
-
-        </tbody>
-        </thead>
-        
-            <td><input class="uk-checkbox" type="checkbox" checked></td>
-            <td>001</td>
-            <td>PA 00001</td>
-            <td>Sacola plástica</td>
-            <td>---</td>
-            <td>10 FD</td>
-            <td>100 por FD</td>
-            <td>1.000,00</td>
-
-
-        </tbody>
         <tfoot>
             <tr>
-              <th>Marcar</th>
               <th>Item</th>
-              <th>Código do produto</th>
               <th>Descrição do produto</th>
               <th>Informações adicionais do produto</th>
               <th>Qtde</th>
               <th>Valor unitário</th>
               <th>Valor total dos produtos</th>
-              
+                
             </tr>
         </tfoot>
     </table>
 </div>
-
-<!-- fim da tabela -->
-
-
-<!-- This is the modal -->
-<div id="modal-example" uk-modal>
-  <div class="uk-modal-dialog uk-modal-body">
-  <p>Você está em :</p>
-  <h2>Edição de item de proposta</h2>
-  <span class="text">Informações do item da proposta</span> 
-  
-    <div class="form">
-      <form class="uk-form-horizontal uk-margin-large" method="post">
-        <!-- preciso fazer uma função que vincule a linha de produto ao  id do item -->
-        <div class="uk-margin">
-          <label class="uk-form-label" for="form-horizontal-select">Item</label>
-          <div class="uk-form-controls">
-              <select class="uk-select" id="form-horizontal-select" name="id" >
-                <?php foreach ($item as $i) {?> 
-                  <option value=""><?= $i['id']?></option>
-                <?php }?>
-              </select>
-          </div>
-      </div>
-  
-      <div class="uk-margin">
-          <label class="uk-form-label" for="form-horizontal-select">Produto</label>
-          <div class="uk-form-controls">
-              <select class="uk-select" id="form-horizontal-select" name="produto" >
-                <?php foreach ($item as $i) {?> 
-                  <option><?= $i['produto']?></option>
-                <?php }?>
-              </select>
-          </div>
-      </div>
-  
-      <!-- informações adicionais -->
-      <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-text">Informações adicionais do produto</label>
-        <div class="uk-form-controls">
-            <input class="uk-input" id="form-stacked-text" type="text" placeholder="">
-        </div>
-      </div>
-  
-      <!-- fazer uma função que aparece a unidade de medida do item com a escolha do mesmo... -->
-      <div class="uk-margin">
-          <label class="uk-form-label" for="form-horizontal-select">Unidade de medida</label>
-          <div class="uk-form-controls">
-              <select class="uk-select" id="form-horizontal-select" name="unid_medida" >
-                <?php foreach ($item as $i) {?> 
-                  <option><?= $i['unid_medida']?></option>
-                <?php }?>
-              </select>
-          </div>
-      </div>
-      <div class="uk-margin">
-          <label class="uk-form-label" for="form-horizontal-select">Qtde.</label>
-          <div class="uk-form-controls">
-          <input class="uk-input" id="form-stacked-text" type="number" placeholder="">
-          </div>
-      </div> 
-      
-      <div class="uk-margin">
-        <label class="uk-form-label" for="form-horizontal-select">Valor unitario</label>
-        <input type="text" class="uk-input" onkeypress="$(this).mask('R$ 000,00')">
-      </div>
-
-      <div class="uk-margin">
-        <label class="uk-form-label" for="form-horizontal-select">Valor total</label>
-        <?php {?>
-        <?php }?>
-      </div>
-
-
-
-
-
-    </form>
-
-    <!-- botoes para salvar e cancelar -->
-    <p class="uk-text-right">
-        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-        <button class="uk-button uk-button-primary" type="button">Save</button>
-    </p>
-  </div>
-</div>
-

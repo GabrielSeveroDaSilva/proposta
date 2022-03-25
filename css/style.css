@@ -12,11 +12,8 @@
   border-radius: 5px;
 }
 
-.home-section {
-  width: 100vw;
-  height: 100vh;
-}
 .home-section .form {
+  position: relative;
   border: 0.5px solid #d0d3d4;
   padding: 15px;
   width: 75%;
@@ -28,6 +25,13 @@
 .home-section .form label {
   font-weight: 600;
   font-size: 15px;
+}
+.home-section .form #saida {
+  position: absolute;
+  padding: 10px 10px;
+  background: #fff;
+  color: #666;
+  border: 1px solid #e5e5e5;
 }
 .home-section .form h1 {
   font-weight: bolder;
@@ -118,8 +122,6 @@
 }
 
 .table {
-  position: absolute;
-  width: 100%;
   border: 1px solid #cacfd2;
   padding: 15px;
   box-shadow: 0px 0px 100px -20px rgba(0, 0, 0, 0.5);
@@ -127,7 +129,6 @@
 }
 .table .uk-table {
   background: #5dade2;
-  width: 100%;
   border-radius: 5px;
   margin: 10px;
 }
@@ -204,93 +205,6 @@
   text-decoration: none;
 }
 .table .excluir:hover {
-  background-color: #ec7063;
-}
-
-.uk-modal-dialog {
-  border: 0.5px solid #d0d3d4;
-  padding: 15px;
-  width: 75%;
-  margin: auto;
-  border-radius: 5px;
-  text-align: left;
-  box-shadow: 0px 0px 111px -20px rgba(0, 0, 0, 0.5);
-}
-.uk-modal-dialog label {
-  font-weight: 600;
-  font-size: 15px;
-}
-.uk-modal-dialog h1 {
-  font-weight: bolder;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-}
-.uk-modal-dialog p {
-  font-weight: bolder;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-.uk-modal-dialog .uk-form-controls {
-  width: 50%;
-  float: right;
-}
-.uk-modal-dialog .salvar {
-  padding: 10px 40px;
-  right: 15px;
-  font-weight: 600;
-  background-color: #239b23;
-  border: 2px solid #0c410c;
-  border-radius: 5px;
-  color: #fff;
-  margin-right: 15px;
-  text-decoration: none;
-  margin: 15px;
-}
-.uk-modal-dialog .salvar:hover {
-  background-color: #0c410c;
-}
-.uk-modal-dialog .salvar-criar {
-  padding: 10px 40px;
-  right: 15px;
-  font-weight: 600;
-  background-color: #3498db;
-  border: 2px solid #1b4f72;
-  border-radius: 5px;
-  color: #fff;
-  margin-right: 15px;
-  text-decoration: none;
-  margin: 15px;
-}
-.uk-modal-dialog .salvar-criar:hover {
-  background-color: #1b4f72;
-}
-.uk-modal-dialog .cancelar {
-  padding: 10px 40px;
-  right: 15px;
-  font-weight: 600;
-  background-color: #cb4335;
-  border: 2px solid #641e16;
-  border-radius: 5px;
-  color: #fff;
-  margin-right: 15px;
-  text-decoration: none;
-  margin: 15px;
-}
-.uk-modal-dialog .cancelar:hover {
-  background-color: #641e16;
-}
-.uk-modal-dialog .excluir {
-  padding: 10px 40px;
-  right: 15px;
-  background-color: #cb4335;
-  border: 2px solid #641e16;
-  border-radius: 5px;
-  color: #fff;
-  margin-right: 15px;
-  text-decoration: none;
-}
-.uk-modal-dialog .excluir:hover {
   background-color: #ec7063;
 }
 
@@ -468,8 +382,7 @@ body {
 }
 
 .home-section {
-  height: 100vh;
-  width: 100%;
+  margin: 15px;
 }
 .home-section .home-content {
   background: #e5e7e9;
@@ -487,7 +400,6 @@ body {
   text-transform: capitalize;
 }
 .home-section p {
-  margin: 15px;
   font-size: 15px;
 }
 .home-section .text {

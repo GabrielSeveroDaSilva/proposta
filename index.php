@@ -17,52 +17,61 @@ if(isset($_GET['i'])){
 //carrega o header
 
 
+
+
+$content = "";
+
 include './views/header.php';
 
 //carrega a página escolhida pelo usuario
 switch ($pagina) {
 
     case'home':
-        include './views/home.php';
+        $content = './views/home.php';
         break;
 
     case'propostas':
-        include './views/pag/_proposta.php';
+        $content = './views/pag/_proposta.php';
         break;
 
     case'clientes':
-        include './views/pag/_cliente.php';
+        $content = './views/pag/_cliente.php';
         break;
 
     case'item':
-        include './views/pag/_item.php';
+        $content = './views/pag/_item.php';
         break;
 
     case'':
-        include './views/';
+        $content = './views/';
         break;
 
     case'nova-proposta':
-        include './views/pag/_nova-proposta.php';
+        $content = './views/pag/_nova-proposta.php';
         break;
 
     case'novo-item':
-        include './views/pag/_novo-item.php';
+        $content = './views/pag/_novo-item.php';
         break;
 
     case'novo-cliente':
-        include './views/pag/_novo-cliente.php';
+        $content = './views/pag/_novo-cliente.php';
         break;
         
-    case'tipo-movimentacao':
-        include './views/pag/_tipo-movimentacao.php';
+    case'configuracao':
+        $content = './views/pag/_configuracao.php';
         break;
 
     case'sair':
-        include './views/sair.php';
+        $content = './views/sair.php';
         break;
 
 }
+
+echo "<div class='uk-container' >";
+include $content;
+echo "</div>";
+
 
 include './views/footer.php';
 
